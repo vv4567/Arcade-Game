@@ -19,7 +19,21 @@ public class Ticket : MonoBehaviour
     {
         if(other.tag =="Player")
         {
-            other.GetComponent<TicketCount>().points++;
+            //other.GetComponent<TicketCount>().points++;
+
+            GameManager gameManager = null;
+            GameObject tmp = GameObject.Find("GameManager");
+            if (tmp != null) { gameManager = tmp.GetComponent<GameManager>(); }
+
+            if (gameManager != null)
+            {
+                TicketCount ticketCount = gameManager.GetComponent<TicketCount>();
+                if (ticketCount != null)
+                {
+                    ticketCount.points++;
+                }
+            }
+
             Destroy(this.gameObject);
         }
     }
