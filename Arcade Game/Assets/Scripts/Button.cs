@@ -1,39 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Button : MonoBehaviour
 {
-    public float yThreshold = 0;
-    public float yOrigin = 0;
-    private bool pressed = false;
+    public ButtonClicker ButtonClicker;
+    public UnityEvent OnActivation;
 
     private void Start()
     {
-        //yOrigin = gameObject.transform.localPosition.y;
+        if (ButtonClicker == null)
+        {
+            ButtonClicker = GetComponentInChildren<ButtonClicker>();
+        }
     }
 
-
-    private void OnTriggerExit(Collider other)
-    {
-        gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, yOrigin, gameObject.transform.localPosition.z);
-    }
-
-    // Update is called once per frame
     private void Update()
     {
-
-        if (Mathf.Abs(gameObject.transform.localPosition.y - yOrigin) >= yThreshold)
+        if (ButtonClicker != null && ButtonClicker.isPressed())
         {
-            if (!pressed)
-            {
-                pressed = true;
-                Debug.Log("Button Pressed");
-            }
-        }
-        else
-        {
-            pressed = false;
+            OnActivation.Invoke();
         }
     }
 }
