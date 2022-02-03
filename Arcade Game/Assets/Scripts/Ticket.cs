@@ -15,7 +15,7 @@ public class Ticket : MonoBehaviour
     {
        
     }
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
         if(other.tag =="Player")
         {
@@ -36,5 +36,5 @@ public class Ticket : MonoBehaviour
 
             Destroy(this.gameObject);
         }
-    }
+    }*/
 }
