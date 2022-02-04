@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
 public class BasketTriggerBox : MonoBehaviour
 { 
-    public List<string> itemList;
-    public List<int> scoreList;
-    public int totalScore = 0;
+    public List<string> ItemList;
+    public List<int> ScoreList;
+    public SkeeballMachine GameMachine;
 
     private void Start()
     {
-        while (itemList.Count > scoreList.Count)
+        while (ItemList.Count > ScoreList.Count)
         {
-            scoreList.Add(0);
+            ScoreList.Add(0);
         }
         
     }
@@ -23,12 +24,15 @@ public class BasketTriggerBox : MonoBehaviour
     {
         if (other.GetComponent<InteractableItem>() != null)
         {
-            foreach (string item in itemList)
+            foreach (string item in ItemList)
             {
                 if (item == other.GetComponent<InteractableItem>().ItemID)
                 {
-                    totalScore += scoreList[itemList.IndexOf(item)];
-                    Debug.Log(totalScore);
+                    GameMachine.AddScore(ScoreList[ItemList.IndexOf(item)]);
+                    Destroy(other.gameObject);
+                    GameMachine.SpawnBalls(1);
+
+                    //Debug.Log(totalScore);
                     return;
                 }
             }
