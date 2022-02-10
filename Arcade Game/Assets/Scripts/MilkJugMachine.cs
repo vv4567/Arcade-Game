@@ -23,6 +23,7 @@ public class MilkJugMachine : GameMachine
 
     public override void StartMachine()
     {
+        if (_isRunning) { return; }
 
         base.StartMachine();
 

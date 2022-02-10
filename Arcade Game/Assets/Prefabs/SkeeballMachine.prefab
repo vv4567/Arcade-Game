@@ -63,7 +63,21 @@ MonoBehaviour:
   - skeeball
   ScoreList: 0a000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScoredList: []
+  OnScoredList:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6759206049972241588}
+        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
+        m_MethodName: UpdateNumberOfBalls
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &120126713018894534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1296,21 @@ MonoBehaviour:
   - skeeball
   ScoreList: 14000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScoredList: []
+  OnScoredList:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6759206049972241588}
+        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
+        m_MethodName: UpdateNumberOfBalls
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2382000489219624682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1374,21 @@ MonoBehaviour:
   - skeeball
   ScoreList: 1e000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScoredList: []
+  OnScoredList:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6759206049972241588}
+        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
+        m_MethodName: UpdateNumberOfBalls
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2610906137997772909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3870,21 @@ MonoBehaviour:
   - skeeball
   ScoreList: 00000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScoredList: []
+  OnScoredList:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6759206049972241588}
+        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
+        m_MethodName: UpdateNumberOfBalls
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &5917274047276648562
 PrefabInstance:
   m_ObjectHideFlags: 0

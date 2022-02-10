@@ -85,7 +85,7 @@ public class GameMachine : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (_isRunning)
+        if (_isRunning && GameTimeInSeconds != 0)
         {
             if ((int)(Time.fixedUnscaledTime - timeStarted) != timeCounter)
             {

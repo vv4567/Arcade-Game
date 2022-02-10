@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2726883477160396021}
         m_TargetAssemblyTypeName: MilkJugMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
+        m_MethodName: UpdateNumberOfBalls
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -811,7 +811,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2726883477160396021}
         m_TargetAssemblyTypeName: MilkJugMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
+        m_MethodName: UpdateNumberOfBalls
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
