@@ -9,7 +9,8 @@ public class BasketTriggerBox : MonoBehaviour
 { 
     public List<string> ItemList;
     public List<int> ScoreList;
-    public SkeeballMachine GameMachine;
+    public GameMachine GameMachine;
+    public List<UnityEvent> OnScoredList;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class BasketTriggerBox : MonoBehaviour
         }
         
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,7 +32,9 @@ public class BasketTriggerBox : MonoBehaviour
                 {
                     GameMachine.AddScore(ScoreList[ItemList.IndexOf(item)]);
                     Destroy(other.gameObject);
-                    GameMachine.SpawnBalls(1);
+
+                    OnScoredList[ItemList.IndexOf(item)].Invoke();
+                    //GameMachine.SpawnBalls(1);
 
                     //Debug.Log(totalScore);
                     return;
