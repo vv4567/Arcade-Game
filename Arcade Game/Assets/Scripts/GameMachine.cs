@@ -38,7 +38,9 @@ public class GameMachine : MonoBehaviour
 
         //start game time
         timeStarted = Time.fixedUnscaledTime;
-        StartCoroutine(StopMachineCo());
+
+        if (GameTimeInSeconds != 0)
+        { StartCoroutine(StopMachineCo()); }
 
         //spawn balls
         //SpawnBalls(4);

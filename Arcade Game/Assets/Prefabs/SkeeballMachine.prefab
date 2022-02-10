@@ -598,7 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f149c23818142ef4887fd7ed3e100c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameTimeInSeconds: 60
+  GameTimeInSeconds: 0
+  NumberOfBalls: 7
 --- !u!114 &912249742616955042
 MonoBehaviour:
   m_ObjectHideFlags: 0

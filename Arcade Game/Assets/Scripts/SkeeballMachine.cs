@@ -5,6 +5,9 @@ using UnityEngine;
 public class SkeeballMachine : GameMachine
 {
     private ObjectSpawner ballSpawner;
+    private int numberOfBallUsed = 0;
+
+    public int NumberOfBalls = 7;
 
     protected override void Start()
     {
@@ -18,7 +21,7 @@ public class SkeeballMachine : GameMachine
         base.StartMachine();
 
         //spawn balls
-        SpawnBalls(4);
+        SpawnBalls(NumberOfBalls);
     }
 
     public void SpawnBalls(int quantity)
@@ -29,4 +32,13 @@ public class SkeeballMachine : GameMachine
         ballSpawner.SpawnObject();
     }
 
+    public void UpdateNumberOfBalls(int numberOfBall)
+    {
+        numberOfBallUsed += numberOfBall;
+        if (numberOfBallUsed >= NumberOfBalls)
+        {
+            numberOfBallUsed = 0;
+            StopMachine();
+        }
+    }
 }

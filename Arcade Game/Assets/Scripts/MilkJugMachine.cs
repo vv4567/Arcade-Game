@@ -6,9 +6,12 @@ public class MilkJugMachine : GameMachine
 {
     public ObjectSpawner ballSpawner;
     public ObjectSpawner bottleSpawner;
+
     private int numberOfBottlesFallen = 0;
+    private int numberOfBallUsed = 0;
 
     public int NumberOfBottles = 6;
+    public int NumberOfBalls = 4;
 
 
     protected override void Start()
@@ -24,7 +27,7 @@ public class MilkJugMachine : GameMachine
         base.StartMachine();
 
         //spawn balls
-        SpawnBalls(1);
+        SpawnBalls(NumberOfBalls);
         SpawnBottleStack();
     }
 
@@ -50,7 +53,17 @@ public class MilkJugMachine : GameMachine
         if (numberOfBottlesFallen >= NumberOfBottles)
         {
             numberOfBottlesFallen = 0;
-            SpawnBottleStack();
+            StopMachine();
+        }
+    }
+
+    public void UpdateNumberOfBalls(int numberOfBall)
+    {
+        numberOfBallUsed += numberOfBall;
+        if (numberOfBallUsed >= NumberOfBalls)
+        {
+            numberOfBallUsed = 0;
+            StopMachine();
         }
     }
 }
