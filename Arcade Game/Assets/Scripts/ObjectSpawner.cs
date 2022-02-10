@@ -23,7 +23,7 @@ public class ObjectSpawner : MonoBehaviour
         spawnQuantity = quantity;
     }
 
-    public void SpawnObject()
+    public void SpawnObject(GameObject[] objectList = null)
     {
         if (SpawnedObject == null) { return; }
 
@@ -37,15 +37,31 @@ public class ObjectSpawner : MonoBehaviour
         Quantity = spawnQuantity;
 
 
-        StartCoroutine(SpawnedObjectCo());
+        StartCoroutine(SpawnedObjectCo(objectList));
         isSpawning = true;
     }
 
-    IEnumerator SpawnedObjectCo()
+    IEnumerator SpawnedObjectCo(GameObject[] objectList = null)
     {
         while (spawnedQuantity < Quantity)
         {
-            Instantiate(SpawnedObject, this.transform.position, Quaternion.Euler(Vector3.zero));
+
+            if (objectList != null)
+            {
+                for(int i = 0; i < objectList.Length; ++i)
+                {
+                    if (objectList[i] == null)
+                    {
+                        objectList[i] = Instantiate(SpawnedObject, this.transform.position, Quaternion.Euler(Vector3.zero));
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                Instantiate(SpawnedObject, this.transform.position, Quaternion.Euler(Vector3.zero));
+            }
+
             spawnedQuantity++;
             yield return new WaitForSeconds(SpawnDelay);
         }

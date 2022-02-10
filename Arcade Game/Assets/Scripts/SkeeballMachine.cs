@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SkeeballMachine : GameMachine
 {
-    private ObjectSpawner ballSpawner;
+    public ObjectSpawner ballSpawner;
     private int numberOfBallUsed = 0;
 
     public int NumberOfBalls = 7;
+    public GameObject[] BallCounter;
 
     protected override void Start()
     {
         base.Start();
-        ballSpawner = GetComponentInChildren<ObjectSpawner>();
+        if (ballSpawner == null)
+        { ballSpawner = GetComponentInChildren<ObjectSpawner>(); }
     }
 
     public override void StartMachine()
@@ -30,12 +32,13 @@ public class SkeeballMachine : GameMachine
         if (ballSpawner == null || !_isRunning) { return; }
 
         ballSpawner.SetQuantity(quantity);
-        ballSpawner.SpawnObject();
+        ballSpawner.SpawnObject(BallCounter);
     }
 
     public void UpdateNumberOfBalls(int numberOfBall)
     {
         numberOfBallUsed += numberOfBall;
+
         if (numberOfBallUsed >= NumberOfBalls)
         {
             numberOfBallUsed = 0;

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class MilkJugMachine : GameMachine
 {
-    public ObjectSpawner ballSpawner;
-    public ObjectSpawner bottleSpawner;
+    public ObjectSpawner BallSpawner;
+    public ObjectSpawner BottleSpawner;
+
+    public GameObject[] BallCounter;
+    public GameObject[] BottleStackCounter;
 
     private int numberOfBottlesFallen = 0;
     private int numberOfBallUsed = 0;
@@ -17,8 +20,10 @@ public class MilkJugMachine : GameMachine
     protected override void Start()
     {
         base.Start();
-        //ballSpawner = GetComponentInChildren<ObjectSpawner>();
-        //bottleSpawner = GetComponentInChildren<ObjectSpawner>();
+        BallCounter = new GameObject[NumberOfBalls];
+        BottleStackCounter = new GameObject[1];
+        //BallSpawner = GetComponentInChildren<ObjectSpawner>();
+        //BottleSpawner = GetComponentInChildren<ObjectSpawner>();
     }
 
     public override void StartMachine()
@@ -27,6 +32,12 @@ public class MilkJugMachine : GameMachine
 
         base.StartMachine();
 
+        if (BottleStackCounter[0] != null)
+        { 
+            Destroy(BottleStackCounter[0]);
+            BottleStackCounter[0] = null;
+        }
+
         //spawn balls
         SpawnBalls(NumberOfBalls);
         SpawnBottleStack();
@@ -34,23 +45,23 @@ public class MilkJugMachine : GameMachine
 
     public void SpawnBalls(int quantity)
     {
-        if (ballSpawner == null || !_isRunning) { return; }
+        if (BallSpawner == null || !_isRunning) { return; }
 
-        ballSpawner.SetQuantity(quantity);
-        ballSpawner.SpawnObject();
+        BallSpawner.SetQuantity(quantity);
+        BallSpawner.SpawnObject(BallCounter);
     }
 
     public void SpawnBottleStack()
     {
-        if (bottleSpawner == null || !_isRunning) { return; }
-
-        bottleSpawner.SetQuantity(1);
-        bottleSpawner.SpawnObject();
+        if (BottleSpawner == null || !_isRunning) { return; }
+        BottleSpawner.SetQuantity(1);
+        BottleSpawner.SpawnObject(BottleStackCounter);
     }
 
     public void UpdateNumberOfBottles(int numberOfBottle)
     {
         numberOfBottlesFallen += numberOfBottle;
+
         if (numberOfBottlesFallen >= NumberOfBottles)
         {
             numberOfBottlesFallen = 0;
@@ -61,6 +72,7 @@ public class MilkJugMachine : GameMachine
     public void UpdateNumberOfBalls(int numberOfBall)
     {
         numberOfBallUsed += numberOfBall;
+
         if (numberOfBallUsed >= NumberOfBalls)
         {
             numberOfBallUsed = 0;
