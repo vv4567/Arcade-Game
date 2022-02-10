@@ -63,21 +63,7 @@ MonoBehaviour:
   - skeeball
   ScoreList: 0a000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScored:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6759206049972241588}
-        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  OnScoredList: []
 --- !u!1 &120126713018894534
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +582,7 @@ Transform:
   - {fileID: 4266570315145064908}
   - {fileID: 3442970305993355840}
   - {fileID: 723794594478022886}
+  - {fileID: 7659412720432643699}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1294,21 +1281,7 @@ MonoBehaviour:
   - skeeball
   ScoreList: 14000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScored:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6759206049972241588}
-        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  OnScoredList: []
 --- !u!1 &2382000489219624682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,21 +1345,7 @@ MonoBehaviour:
   - skeeball
   ScoreList: 1e000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScored:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6759206049972241588}
-        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  OnScoredList: []
 --- !u!1 &2610906137997772909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3868,21 +3827,88 @@ MonoBehaviour:
   - skeeball
   ScoreList: 00000000
   GameMachine: {fileID: 6759206049972241588}
-  OnScored:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6759206049972241588}
-        m_TargetAssemblyTypeName: SkeeballMachine, Assembly-CSharp
-        m_MethodName: SpawnBalls
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  OnScoredList: []
+--- !u!1001 &5917274047276648562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2244667228637505076}
+    m_Modifications:
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02069807
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437509, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_Name
+      value: ScoreBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122322119230599975, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 7659412719886031878}
+    - target: {fileID: 7122322119230599975, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: skeeballMachine
+      value: 
+      objectReference: {fileID: 6759206049972241588}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+--- !u!114 &7659412719886031878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4059381727955145844, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+  m_PrefabInstance: {fileID: 5917274047276648562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7659412720432643699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+  m_PrefabInstance: {fileID: 5917274047276648562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6023834057113240104
 PrefabInstance:
   m_ObjectHideFlags: 0
