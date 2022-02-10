@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MilkJugMachine : GameMachine
 {
-    private ObjectSpawner ballSpawner;
-    private ObjectSpawner bottleSpawner;
+    public ObjectSpawner ballSpawner;
+    public ObjectSpawner bottleSpawner;
     private int numberOfBottlesFallen = 0;
 
     public int NumberOfBottles = 6;
@@ -14,8 +14,8 @@ public class MilkJugMachine : GameMachine
     protected override void Start()
     {
         base.Start();
-        ballSpawner = GetComponentInChildren<ObjectSpawner>();
-        bottleSpawner = GetComponentInChildren<ObjectSpawner>();
+        //ballSpawner = GetComponentInChildren<ObjectSpawner>();
+        //bottleSpawner = GetComponentInChildren<ObjectSpawner>();
     }
 
     public override void StartMachine()

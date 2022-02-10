@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameTimeInSeconds: 60
+  ballSpawner: {fileID: 585732897723526712}
+  bottleSpawner: {fileID: 5748531528886545602}
   NumberOfBottles: 6
 --- !u!114 &7563802123620235176
 MonoBehaviour:
