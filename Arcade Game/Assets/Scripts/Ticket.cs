@@ -14,9 +14,9 @@ public class Ticket : MonoBehaviour
         ticketValue = newValue;
     }
 
-   /* private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag =="Player")
+        if (other.tag == "Player")
         {
             //other.GetComponent<TicketCount>().points++;
 
@@ -35,5 +35,5 @@ public class Ticket : MonoBehaviour
 
             Destroy(this.gameObject);
         }
-    }*/
+    }
 }

@@ -44,6 +44,16 @@ public class SkeeballMachine : GameMachine
         if (numberOfBallUsed >= NumberOfBalls)
         {
             numberOfBallUsed = 0;
+
+            for (int i = 0; i < NumberOfBalls; ++i)
+            {
+                if (BallCounter[i] != null)
+                {
+                    Destroy(BallCounter[i]);
+                }
+                BallCounter[i] = null;
+            }
+
             StopMachine();
         }
         
