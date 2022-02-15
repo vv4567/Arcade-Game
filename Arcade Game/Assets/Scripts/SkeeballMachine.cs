@@ -15,6 +15,8 @@ public class SkeeballMachine : GameMachine
         base.Start();
         if (ballSpawner == null)
         { ballSpawner = GetComponentInChildren<ObjectSpawner>(); }
+
+        BallCounter = new GameObject[NumberOfBalls];
     }
 
     public override void StartMachine()
@@ -44,5 +46,8 @@ public class SkeeballMachine : GameMachine
             numberOfBallUsed = 0;
             StopMachine();
         }
+        
     }
+
+
 }

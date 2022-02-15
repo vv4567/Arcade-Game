@@ -5,10 +5,10 @@ using UnityEngine;
 public class GameMachine : MonoBehaviour
 {
     public int GameTimeInSeconds = 60;
-
+    public ObjectSpawner ticketSpawner;
+    public float NumberOfTicketsPerScore = 0.1f;
 
     private int totalScore = 0;
-    //private ObjectSpawner ballSpawner;
     private float timeStarted = 0;
     private int timeCounter = 0;
 
@@ -22,7 +22,11 @@ public class GameMachine : MonoBehaviour
         {
             _machineID = GetComponent<InteractableItem>().name;
         }
-        //ballSpawner = GetComponentInChildren<ObjectSpawner>();
+
+        if (ticketSpawner == null)
+        {
+            ticketSpawner = GetComponentInChildren<ObjectSpawner>();
+        }
     }
 
     public virtual void StartMachine()
@@ -65,7 +69,20 @@ public class GameMachine : MonoBehaviour
         _isRunning = false;
         //turn off light and other effect to let player know the machine is turned off
 
+
+        if (totalScore == 0) { return; }
+
         //spawn tickets
+        ticketSpawner.SetQuantity(1);
+
+        GameObject[] spawnedTicket = new GameObject[1];
+
+        ticketSpawner.SpawnObject(spawnedTicket);
+
+        if (spawnedTicket[0].GetComponent<Ticket>() != null)
+        {
+            spawnedTicket[0].GetComponent<Ticket>().setTicketValue((int)(totalScore * NumberOfTicketsPerScore));
+        }
     }
 
     public virtual void AddScore(int score)

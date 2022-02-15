@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Ticket : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    //public GameObject ticketPrefab;
+
+    public int ticketValue = 1;
+
+    public void setTicketValue(int newValue)
     {
-        
+        ticketValue = newValue;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
    /* private void OnTriggerEnter(Collider other)
     {
         if(other.tag =="Player")
