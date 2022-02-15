@@ -29,7 +29,7 @@ public class Ticket : MonoBehaviour
                 TicketCount ticketCount = gameManager.GetComponent<TicketCount>();
                 if (ticketCount != null)
                 {
-                    ticketCount.points++;
+                    ticketCount.points += ticketValue;
                 }
             }
 
