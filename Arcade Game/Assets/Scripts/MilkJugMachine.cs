@@ -79,4 +79,18 @@ public class MilkJugMachine : GameMachine
             StopMachine();
         }
     }
+
+    public override void StopMachine()
+    {
+        base.StopMachine();
+
+        for (int i = 0; i < NumberOfBalls; ++i)
+        {
+            if (BallCounter[i] != null)
+            {
+                Destroy(BallCounter[i]);
+            }
+            BallCounter[i] = null;
+        }
+    }
 }

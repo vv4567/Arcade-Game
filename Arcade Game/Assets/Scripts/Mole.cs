@@ -10,6 +10,8 @@ public class Mole : MonoBehaviour
 
     public float PopUpDelayMin = 0.5f;
     public float PopUpDelayMax = 2f;
+    public float StayUpTimeMin = 0.5f;
+    public float StayUpTimeMax = 1f;
 
     public UnityEvent onPress;
     public UnityEvent onRelease;
@@ -44,7 +46,6 @@ public class Mole : MonoBehaviour
             presser = other.gameObject;
             onPress.Invoke();
             sound.Play();
-            StartCoroutine(PopUpCo());
         }
     }
 
@@ -52,6 +53,12 @@ public class Mole : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(PopUpDelayMin, PopUpDelayMax));
         PopUp();
+    }
+
+    IEnumerator FallDownCo()
+    {
+        yield return new WaitForSeconds(Random.Range(StayUpTimeMin, StayUpTimeMax));
+        FallDown();
     }
 
     /*
@@ -70,11 +77,27 @@ public class Mole : MonoBehaviour
     {
         molePrefab.transform.localPosition = initialLocalPosition;
         isPressed = false;
+
+        if (isActive)
+        {
+            StartCoroutine(FallDownCo());
+        }
     }
 
     public void FallDown()
     {
         molePrefab.transform.localPosition = pressedLocalPosition;
         isPressed = true;
+
+        if (isActive)
+        {
+            StartCoroutine(PopUpCo());
+        }
+    }
+
+    public void Deactivate()
+    {
+        StopCoroutine(PopUpCo());
+        StopCoroutine(FallDownCo());
     }
 }

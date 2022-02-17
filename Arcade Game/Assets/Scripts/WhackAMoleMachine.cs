@@ -23,8 +23,9 @@ public class WhackAMoleMachine : GameMachine
 
         foreach (Mole mole in moleList)
         {
+            mole.Deactivate();
             mole.isActive = false;
-            mole.PopUp();
+            mole.FallDown();
         }
     }
 
