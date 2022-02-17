@@ -100,6 +100,11 @@ public class GameMachine : MonoBehaviour
         totalScore = score;
     }
 
+    public int GetScore()
+    {
+        return totalScore;
+    }
+
     protected virtual void Update()
     {
         if (_isRunning && GameTimeInSeconds != 0)

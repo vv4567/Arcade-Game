@@ -6,9 +6,16 @@ using UnityEngine.UI;
 public class Skeeball_timer : MonoBehaviour
 {
     //public int timer;
-    public Text countDown;
+    public Text Timer;
+    public Text Score;
 
     public SkeeballMachine skeeballMachine;
+
+    private void Start()
+    {
+        Timer.text = "Score: 00";
+        Timer.text = "Timer: 00:00";
+    }
 
     public string SecondToTimeText(double timeInSeconds)
     {
@@ -44,10 +51,7 @@ public class Skeeball_timer : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        countDown.text = "Start";
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -55,7 +59,11 @@ public class Skeeball_timer : MonoBehaviour
         if (skeeballMachine == null) { return; }
 
         double doubleTime = (double)skeeballMachine.getRemainingTime();
-        
-        countDown.text = "Timer: " + SecondToTimeText(doubleTime);
+
+        if (Timer != null)
+        { Timer.text = "Timer: " + SecondToTimeText(doubleTime); }
+
+        if (Score != null)
+        { Score.text = "Score: " + skeeballMachine.GetScore(); }
     }
 }
