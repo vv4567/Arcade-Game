@@ -4089,8 +4089,20 @@ PrefabInstance:
       propertyPath: skeeballMachine
       value: 
       objectReference: {fileID: 6759206049972241588}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7122322119230599975, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+--- !u!114 &6064151234404160433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 447633234104687555, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+  m_PrefabInstance: {fileID: 5917274047276648562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7659412719886031878 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4059381727955145844, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
@@ -4107,3 +4119,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
   m_PrefabInstance: {fileID: 5917274047276648562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7659412721000885361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4059381729017570307, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+  m_PrefabInstance: {fileID: 5917274047276648562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3924956736865656260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7659412721000885361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858e86260def1b649ab66ae152f02912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: {fileID: 6064151234404160433}
+  Score: {fileID: 7659412719886031878}
+  gameMachine: {fileID: 6759206049972241588}
