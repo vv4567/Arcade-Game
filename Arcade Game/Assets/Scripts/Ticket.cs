@@ -20,17 +20,21 @@ public class Ticket : MonoBehaviour
         {
             //other.GetComponent<TicketCount>().points++;
 
-            GameManager gameManager = null;
-            GameObject tmp = GameObject.Find("GameManager");
-            if (tmp != null) { gameManager = tmp.GetComponent<GameManager>(); }
+            TicketCount ticketCount = null;
 
-            if (gameManager != null)
+            GameObject tmp = GameObject.Find("Watch");
+            if (tmp != null) { ticketCount = tmp.GetComponent<TicketCount>(); }
+
+            if (ticketCount != null)
             {
-                TicketCount ticketCount = gameManager.GetComponent<TicketCount>();
-                if (ticketCount != null)
-                {
-                    ticketCount.points += ticketValue;
-                }
+
+               ticketCount.points += ticketValue;
+
+            }
+            else
+            {
+
+                Debug.Log("Cannot find ticketCount");
             }
 
             Destroy(this.gameObject);
