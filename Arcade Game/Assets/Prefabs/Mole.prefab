@@ -257,8 +257,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   molePrefab: {fileID: 7987860400128182643}
   pressedDeltaHeight: 0.04
-  PopUpDelayMin: 5
-  PopUpDelayMax: 10
+  PopUpDelayMin: 3
+  PopUpDelayMax: 9
+  StayUpTimeMin: 0.4
+  StayUpTimeMax: 0.8
   onPress:
     m_PersistentCalls:
       m_Calls: []
