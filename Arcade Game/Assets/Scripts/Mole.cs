@@ -47,7 +47,10 @@ public class Mole : MonoBehaviour
     {
         if (!isActive) { return; }
 
-        if (other.GetComponent<InteractableItem>() == null || other.GetComponent<InteractableItem>().ItemID != "WhackHammer") { return; }
+        if (other.GetComponent<InteractableItem>() == null 
+            || other.GetComponent<InteractableItem>().ItemID != "WhackHammer"
+            || other.GetComponentInChildren<InteractableItem>().ItemID != "WhackHammer"
+            ) { return; }
 
         if (!isPressed)
         {
@@ -96,7 +99,7 @@ public class Mole : MonoBehaviour
 
     IEnumerator DelayColliderCo()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         isPressed = false;
     }
 
