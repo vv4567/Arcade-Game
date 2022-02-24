@@ -85,12 +85,19 @@ public class Mole : MonoBehaviour
     public void PopUp()
     {
         molePrefab.transform.localPosition = initialLocalPosition;
-        isPressed = false;
+        StartCoroutine(DelayColliderCo());
+
 
         if (isActive)
         {
             StartCoroutine(FallDownCo());
         }
+    }
+
+    IEnumerator DelayColliderCo()
+    {
+        yield return new WaitForSeconds(0.2f);
+        isPressed = false;
     }
 
     public void FallDown()

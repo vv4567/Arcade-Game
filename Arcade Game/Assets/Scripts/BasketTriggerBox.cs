@@ -12,6 +12,8 @@ public class BasketTriggerBox : MonoBehaviour
     public GameMachine GameMachine;
     public List<UnityEvent> OnScoredList;
 
+    public bool shouldDestroyObject = true;
+
     private void Start()
     {
         while (ItemList.Count > ScoreList.Count)
@@ -31,7 +33,9 @@ public class BasketTriggerBox : MonoBehaviour
                 if (item == other.GetComponent<InteractableItem>().ItemID)
                 {
                     GameMachine.AddScore(ScoreList[ItemList.IndexOf(item)]);
-                    Destroy(other.gameObject);
+
+                    if (shouldDestroyObject)
+                    { Destroy(other.gameObject); }
 
                     OnScoredList[ItemList.IndexOf(item)].Invoke();
                     //GameMachine.SpawnBalls(1);
