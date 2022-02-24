@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 3172673774336538625}
   - component: {fileID: 7708467222881827214}
   - component: {fileID: 6760049233465830551}
+  - component: {fileID: 2456833095240850272}
   m_Layer: 0
   m_Name: Hammer Handle
   m_TagString: Untagged
@@ -344,3 +345,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2.0000005, z: 1.0000005}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
+--- !u!114 &2456833095240850272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478090943937176276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd7cbf7773dd58488742ad51a525589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: WhackHammer

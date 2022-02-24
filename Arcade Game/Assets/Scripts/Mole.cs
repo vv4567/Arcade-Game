@@ -40,6 +40,8 @@ public class Mole : MonoBehaviour
     {
         if (!isActive) { return; }
 
+        if (other.GetComponent<InteractableItem>() == null || other.GetComponent<InteractableItem>().ItemID != "WhackHammer") { return; }
+
         if (!isPressed)
         {
             FallDown();
