@@ -31,8 +31,15 @@ public class Mole : MonoBehaviour
         sound = GetComponent<AudioSource>();
         isPressed = true;
         isActive = false;
-        initialLocalPosition = transform.localPosition;
-        pressedLocalPosition = transform.localPosition - new Vector3(0f, pressedDeltaHeight, 0f);
+        initialLocalPosition = molePrefab.transform.localPosition;
+
+        Debug.Log(initialLocalPosition);
+
+        pressedLocalPosition = molePrefab.transform.localPosition - new Vector3(0f, pressedDeltaHeight, 0f);
+
+
+        Debug.Log(pressedLocalPosition);
+
         molePrefab.transform.localPosition = pressedLocalPosition;
     }
 
