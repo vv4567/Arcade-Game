@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7987860399840234522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.239, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   molePrefab: {fileID: 7987860400128182643}
-  pressedDeltaHeight: 0.04
+  pressedDeltaHeight: 0.037
   PopUpDelayMin: 3
   PopUpDelayMax: 9
   StayUpTimeMin: 0.4
@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 7987860400128182642}
   - component: {fileID: 7987860400128182644}
   - component: {fileID: 7987860400128182645}
+  - component: {fileID: 4021143979802507044}
   m_Layer: 0
   m_Name: Press
   m_TagString: Untagged
@@ -353,6 +354,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4021143979802507044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7987860400128182643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.19, z: 1.0000001}
+  m_Center: {x: -0.000000059604645, y: 0.49, z: -0.00000008940695}
 --- !u!1 &7987860400599030694
 GameObject:
   m_ObjectHideFlags: 0

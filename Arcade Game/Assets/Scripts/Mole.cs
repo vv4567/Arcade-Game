@@ -31,8 +31,15 @@ public class Mole : MonoBehaviour
         sound = GetComponent<AudioSource>();
         isPressed = true;
         isActive = false;
-        initialLocalPosition = transform.localPosition;
-        pressedLocalPosition = transform.localPosition - new Vector3(0f, pressedDeltaHeight, 0f);
+        initialLocalPosition = molePrefab.transform.localPosition;
+
+        Debug.Log(initialLocalPosition);
+
+        pressedLocalPosition = molePrefab.transform.localPosition - new Vector3(0f, pressedDeltaHeight, 0f);
+
+
+        Debug.Log(pressedLocalPosition);
+
         molePrefab.transform.localPosition = pressedLocalPosition;
     }
 
@@ -40,7 +47,10 @@ public class Mole : MonoBehaviour
     {
         if (!isActive) { return; }
 
-        if (other.GetComponent<InteractableItem>() == null || other.GetComponent<InteractableItem>().ItemID != "WhackHammer") { return; }
+        if (other.GetComponent<InteractableItem>() == null 
+            || other.GetComponent<InteractableItem>().ItemID != "WhackHammer"
+            || other.GetComponentInChildren<InteractableItem>().ItemID != "WhackHammer"
+            ) { return; }
 
         if (!isPressed)
         {
@@ -78,12 +88,19 @@ public class Mole : MonoBehaviour
     public void PopUp()
     {
         molePrefab.transform.localPosition = initialLocalPosition;
-        isPressed = false;
+        StartCoroutine(DelayColliderCo());
+
 
         if (isActive)
         {
             StartCoroutine(FallDownCo());
         }
+    }
+
+    IEnumerator DelayColliderCo()
+    {
+        yield return new WaitForSeconds(0.1f);
+        isPressed = false;
     }
 
     public void FallDown()
@@ -99,7 +116,6 @@ public class Mole : MonoBehaviour
 
     public void Deactivate()
     {
-        StopCoroutine(PopUpCo());
-        StopCoroutine(FallDownCo());
+        StopAllCoroutines();
     }
 }
