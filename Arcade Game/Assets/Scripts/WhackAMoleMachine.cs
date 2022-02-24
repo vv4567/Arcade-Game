@@ -19,14 +19,16 @@ public class WhackAMoleMachine : GameMachine
 
     public override void StopMachine()
     {
-        base.StopMachine();
-
         foreach (Mole mole in moleList)
         {
             mole.Deactivate();
             mole.isActive = false;
             mole.FallDown();
         }
+
+        base.StopMachine();
+
+
     }
 
 }
