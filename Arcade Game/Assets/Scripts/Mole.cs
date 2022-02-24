@@ -96,7 +96,7 @@ public class Mole : MonoBehaviour
 
     IEnumerator DelayColliderCo()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
         isPressed = false;
     }
 
@@ -113,7 +113,6 @@ public class Mole : MonoBehaviour
 
     public void Deactivate()
     {
-        StopCoroutine(PopUpCo());
-        StopCoroutine(FallDownCo());
+        StopAllCoroutines();
     }
 }

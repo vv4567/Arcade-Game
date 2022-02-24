@@ -8,6 +8,8 @@ public class WhackAMoleMachine : GameMachine
 
     public override void StartMachine()
     {
+        if (_isRunning) { return; }
+
         base.StartMachine();
 
         foreach (Mole mole in moleList)
@@ -19,6 +21,8 @@ public class WhackAMoleMachine : GameMachine
 
     public override void StopMachine()
     {
+        base.StopMachine();
+
         foreach (Mole mole in moleList)
         {
             mole.Deactivate();
@@ -26,7 +30,7 @@ public class WhackAMoleMachine : GameMachine
             mole.FallDown();
         }
 
-        base.StopMachine();
+
 
 
     }
