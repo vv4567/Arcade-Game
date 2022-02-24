@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8674875324466403200}
   - component: {fileID: 1952478576092517783}
   - component: {fileID: 8486712658965620253}
+  - component: {fileID: 7026699097265987291}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -98,6 +99,19 @@ CapsuleCollider:
   m_Height: 2.0000007
   m_Direction: 1
   m_Center: {x: 0.000000029802322, y: -0.00000011920933, z: -0.00000002980233}
+--- !u!114 &7026699097265987291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726493326702384277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd7cbf7773dd58488742ad51a525589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: WhackHammer
 --- !u!1 &3478090943937176276
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,8 +126,6 @@ GameObject:
   - component: {fileID: 1067166496062825562}
   - component: {fileID: 3172673774336538625}
   - component: {fileID: 7708467222881827214}
-  - component: {fileID: 6760049233465830551}
-  - component: {fileID: 2456833095240850272}
   m_Layer: 0
   m_Name: Hammer Handle
   m_TagString: Untagged
@@ -200,7 +212,7 @@ CapsuleCollider:
   m_Radius: 0.47295645
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: -0.51321405, y: 4.286137e-16, z: 0.34263307}
+  m_Center: {x: 0, y: 4.286137e-16, z: 0}
 --- !u!54 &3172673774336538625
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -332,29 +344,3 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!65 &6760049233465830551
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3478090943937176276}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2.0000005, z: 1.0000005}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
---- !u!114 &2456833095240850272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3478090943937176276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd7cbf7773dd58488742ad51a525589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: WhackHammer
