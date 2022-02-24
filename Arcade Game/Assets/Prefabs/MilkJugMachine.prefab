@@ -92,6 +92,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  shouldDestroyObject: 1
 --- !u!1 &937141531767272626
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +986,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  shouldDestroyObject: 1
 --- !u!1 &7486262773877976812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437511, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b939e9f670c454c4297b344f92ffdf11, type: 2}
     m_RemovedComponents:
     - {fileID: 7122322119230599975, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
