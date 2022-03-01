@@ -6,8 +6,14 @@ public class Ticket : MonoBehaviour
 {
 
     //public GameObject ticketPrefab;
-
     public int ticketValue = 1;
+    private TicketCount ticketCount = null;
+
+    private void Start()
+    {
+        GameObject tmp = GameObject.Find("Watch");
+        if (tmp != null) { ticketCount = tmp.GetComponent<TicketCount>(); }
+    }
 
     public void setTicketValue(int newValue)
     {
@@ -19,21 +25,12 @@ public class Ticket : MonoBehaviour
         if (other.tag == "Player")
         {
             //other.GetComponent<TicketCount>().points++;
-
-            TicketCount ticketCount = null;
-
-            GameObject tmp = GameObject.Find("Watch");
-            if (tmp != null) { ticketCount = tmp.GetComponent<TicketCount>(); }
-
             if (ticketCount != null)
             {
-
                ticketCount.points += ticketValue;
-
             }
             else
             {
-
                 Debug.Log("Cannot find ticketCount");
             }
 
