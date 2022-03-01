@@ -817,6 +817,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9091816483676502164}
     m_Modifications:
+    - target: {fileID: 549386250530427766, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: gameMachine
+      value: 
+      objectReference: {fileID: 3740011291744521813}
     - target: {fileID: 4059381728516437505, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -881,6 +885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 4059381728516437510, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: af6fe543ebb998547994d50a7e1a3fd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3db0fe2209d4b47acfe0d814361663, type: 3}
 --- !u!4 &3986165811105417489 stripped
@@ -895,6 +903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9091816483676502164}
     m_Modifications:
+    - target: {fileID: 388460174005419368, guid: 334b949bc06a44543b306406b9a34350, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: af6fe543ebb998547994d50a7e1a3fd3, type: 2}
     - target: {fileID: 3131212804427315306, guid: 334b949bc06a44543b306406b9a34350, type: 3}
       propertyPath: m_LocalScale.y
       value: 8.7481165
