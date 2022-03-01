@@ -27,7 +27,7 @@ public class Ticket : MonoBehaviour
             //other.GetComponent<TicketCount>().points++;
             if (ticketCount != null)
             {
-               ticketCount.points += ticketValue;
+               ticketCount.NumberOfTickets += ticketValue;
             }
             else
             {
