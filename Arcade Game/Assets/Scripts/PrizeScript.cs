@@ -9,7 +9,8 @@ public class PrizeScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            other.transform.position = new Vector3(1.897f, 0.2f, 1.68f);//(where you want to teleport)
+            Debug.Log(other.gameObject.name);
+            other.gameObject.transform.position = new Vector3(1.897f, 0.2f, -1.44f);//(where you want to teleport)
             if (other.GetComponentInChildren<LocomotionSystem>() != null)
             {
                 other.GetComponentInChildren<LocomotionSystem>().gameObject.SetActive(false);
