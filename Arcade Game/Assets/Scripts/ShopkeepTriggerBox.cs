@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ShopkeepTriggerBox : MonoBehaviour
 {
     public TicketCount ticketManager;
-    public GameObject player;
+    public List<GameObject> player;
     public List<GameObject> RewardList;
     public List<int> RewardRequirement;
 
