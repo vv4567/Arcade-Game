@@ -327,7 +327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e74bf31e7aa3fd40930a791b48c2e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  NumberOfTickets: 0
+  ticketCountText: {fileID: 0}
 --- !u!1 &6582083001647529254
 GameObject:
   m_ObjectHideFlags: 0

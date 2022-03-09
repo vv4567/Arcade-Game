@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e74bf31e7aa3fd40930a791b48c2e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
+  NumberOfTickets: 0
   ticketCountText: {fileID: 9079911904131206285}
 --- !u!1 &9079911903942611643
 GameObject:
