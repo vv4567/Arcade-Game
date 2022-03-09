@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ElevatorController : MonoBehaviour
 {
-    public GameObject Player;
+    public List<GameObject> Players;
     //use this when the ElevatorFBX is a child of another prefab
     public GameObject Elevator;
 
@@ -54,9 +54,12 @@ public class ElevatorController : MonoBehaviour
         if (!IsMoving) 
         { 
             IsMoving = true;
-            if (Player != null)
+            foreach (GameObject player in Players)
             {
-                Player.transform.SetParent(Elevator.transform);
+                if (player != null)
+                {
+                    player.transform.SetParent(Elevator.transform);
+                }
             }
         }
     }
@@ -115,9 +118,12 @@ public class ElevatorController : MonoBehaviour
             {
                 IsOpeningDoors = false;
 
-                if (Player != null)
+                foreach (GameObject player in Players)
                 {
-                    Player.transform.SetParent(null);
+                    if (player != null)
+                    {
+                        player.transform.SetParent(null);
+                    }
                 }
             }
 
