@@ -13,17 +13,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m2
-    second: {fileID: 2100000, guid: f844144622ae5f84ba522fbde2fde360, type: 2}
+    second: {fileID: 2100000, guid: 24a700065b3a53a4589c6e986eb9bfb8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m3
-    second: {fileID: 2100000, guid: 2ee64aee964ae8c4993b043ae67323ef, type: 2}
+    second: {fileID: 2100000, guid: d66da58b6d5fe8a459b4ceb696e97bc7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m4
-    second: {fileID: 2100000, guid: f844144622ae5f84ba522fbde2fde360, type: 2}
+    second: {fileID: -14713441452030424, guid: b202ace145fcb754889c508b2860b7fc, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

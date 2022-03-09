@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 02 - Default
-    second: {fileID: 2100000, guid: 709cc7682f8c26243bb75013c0822fcb, type: 2}
+    second: {fileID: -1941015524762358816, guid: fe35fa9b0e8a2e94a92ec69fd9fea2c5, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #24
-    second: {fileID: 2100000, guid: 709cc7682f8c26243bb75013c0822fcb, type: 2}
+    second: {fileID: -4794284998506904365, guid: b202ace145fcb754889c508b2860b7fc, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #26
-    second: {fileID: 2100000, guid: 709cc7682f8c26243bb75013c0822fcb, type: 2}
+    second: {fileID: -1941015524762358816, guid: fe35fa9b0e8a2e94a92ec69fd9fea2c5, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,7 +33,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: armedia_marker_material0
-    second: {fileID: 2100000, guid: 709cc7682f8c26243bb75013c0822fcb, type: 2}
+    second: {fileID: -1941015524762358816, guid: fe35fa9b0e8a2e94a92ec69fd9fea2c5, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
