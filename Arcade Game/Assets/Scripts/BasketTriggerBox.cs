@@ -11,6 +11,7 @@ public class BasketTriggerBox : MonoBehaviour
     public List<int> ScoreList;
     public GameMachine GameMachine;
     public List<UnityEvent> OnScoredList;
+    AudioSource sound;
 
     public bool shouldDestroyObject = true;
 
@@ -19,6 +20,7 @@ public class BasketTriggerBox : MonoBehaviour
         while (ItemList.Count > ScoreList.Count)
         {
             ScoreList.Add(0);
+            sound = GetComponent<AudioSource>();
         }
         
     }
@@ -33,6 +35,8 @@ public class BasketTriggerBox : MonoBehaviour
                 if (item == other.GetComponent<InteractableItem>().ItemID)
                 {
                     GameMachine.AddScore(ScoreList[ItemList.IndexOf(item)]);
+
+                    sound.Play();
 
                     if (shouldDestroyObject)
                     { Destroy(other.gameObject); }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class RotateDoorController : MonoBehaviour
 {
     [Header("Door Lock")]
@@ -22,6 +23,7 @@ public class RotateDoorController : MonoBehaviour
     public float RDoor_YRotation_Close;
 
     [Header("Door Events")]
+    public UnityEvent OnNoKey;
     public UnityEvent OnUnlocked;
     public UnityEvent OnOpenStart;
     public UnityEvent OnOpenFinish;
@@ -31,10 +33,12 @@ public class RotateDoorController : MonoBehaviour
     private bool isOpening = false;
     private bool isClosing = false;
 
-
+    AudioSource sound;
 
     private void Start()
     {
+        sound = GetComponent<AudioSource>();
+
         if (isOpen)
         {
             if (LDoor != null)
@@ -69,22 +73,28 @@ public class RotateDoorController : MonoBehaviour
             {
                 locked = false;
             }
-
+            
             OnUnlocked.Invoke();
+        }
+        else if (other.tag == "Player" && locked)
+        {
+            OnNoKey.Invoke();
         }
     }
 
     public void OpenDoors()
     {
-        if (locked) { return; }
+        if (locked  || isOpen || isOpening) { return; }
 
         OnOpenStart.Invoke();
         isOpening = true;
+        //sound.Play();
+
     }
 
     public void CloseDoors()
     {
-        if (locked) { return; }
+        if (locked  || !isOpen || isClosing) { return; }
 
         OnCloseStart.Invoke();
         isClosing = true;
@@ -121,6 +131,7 @@ public class RotateDoorController : MonoBehaviour
             //If there is no door to open
             if (LDoor == null && RDoor == null) 
             {
+                
                 isOpening = false;
                 OnOpenFinish.Invoke();
                 return;
@@ -150,6 +161,7 @@ public class RotateDoorController : MonoBehaviour
 
             if (!isOpening)
             {
+                isOpen = true;
                 OnOpenFinish.Invoke();
             }
             return;
@@ -189,6 +201,7 @@ public class RotateDoorController : MonoBehaviour
 
             if (!isClosing)
             {
+                isOpen = false;
                 OnCloseFinish.Invoke();
             }
         }
