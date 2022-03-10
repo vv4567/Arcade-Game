@@ -12,6 +12,7 @@ public class LockHighlight : MonoBehaviour
 
     public void Start()
     {
+
         if (LockRenderer == null)
         {
             LockRenderer = GetComponent<Renderer>();
@@ -25,17 +26,29 @@ public class LockHighlight : MonoBehaviour
 
     public void Highlight()
     {
+        Debug.Log("start function highlight");
         if (LockRenderer != null && HighlightMaterial != null)
         {
             LockRenderer.materials[MaterialIndex] = HighlightMaterial;
+            Debug.Log("did highlight");
+        }
+        else
+        {
+            Debug.Log("fail to highlight");
         }
     }
 
     public void Unhighlight()
     {
+        Debug.Log("start function UNhighlight");
         if (LockRenderer != null && DefaultMaterial != null)
         {
             LockRenderer.materials[MaterialIndex] = DefaultMaterial;
+            Debug.Log("did unhighlight");
+        }
+        else
+        {
+            Debug.Log("fail to unhighlight");
         }
     }
 }
