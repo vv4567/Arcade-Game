@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 839003675660947031}
   - component: {fileID: 2563631845771671752}
   - component: {fileID: 5844764315179631738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MilkJugBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

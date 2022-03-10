@@ -74,10 +74,9 @@ public class RotateDoorController : MonoBehaviour
                 if (locked)
                 {
                     locked = false;
+                    OnUnlocked.Invoke();
+                    return;
                 }
-
-                OnUnlocked.Invoke();
-                return;
             }
         }
         
