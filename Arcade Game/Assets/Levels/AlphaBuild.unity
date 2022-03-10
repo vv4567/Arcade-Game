@@ -32986,6 +32986,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845359166}
     m_Modifications:
+    - target: {fileID: 823927240596045510, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: ScoreList.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1647128183854095676, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_Name
       value: SkeeballMachine
@@ -33061,6 +33065,18 @@ PrefabInstance:
     - target: {fileID: 3284746821291954564, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.811
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: NumberOfBalls
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: GameTimeInSeconds
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874058460602019229, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: m_Name
+      value: 1PointTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
@@ -37193,6 +37209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845359166}
     m_Modifications:
+    - target: {fileID: 823927240596045510, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: ScoreList.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1647128183854095676, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_Name
       value: SkeeballMachine (1)
@@ -37268,6 +37288,18 @@ PrefabInstance:
     - target: {fileID: 3284746821291954564, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: NumberOfBalls
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: GameTimeInSeconds
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874058460602019229, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: m_Name
+      value: 1PointTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
@@ -62609,6 +62641,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845359166}
     m_Modifications:
+    - target: {fileID: 823927240596045510, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: ScoreList.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1647128183854095676, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_Name
       value: SkeeballMachine (2)
@@ -62684,6 +62720,18 @@ PrefabInstance:
     - target: {fileID: 3284746821291954564, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.321
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: NumberOfBalls
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: GameTimeInSeconds
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874058460602019229, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: m_Name
+      value: 1PointTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
@@ -79979,6 +80027,14 @@ PrefabInstance:
       propertyPath: m_Height
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 3675126494639751180, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: m_Text
+      value: tickets
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675126495428568774, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: NumberOfTickets
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4680999804444780378, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_MinHeight
       value: 1
@@ -80181,6 +80237,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845359166}
     m_Modifications:
+    - target: {fileID: 823927240596045510, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: ScoreList.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1647128183854095676, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_Name
       value: SkeeballMachine (3)
@@ -80256,6 +80316,18 @@ PrefabInstance:
     - target: {fileID: 3284746821291954564, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.791
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: NumberOfBalls
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759206049972241588, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: GameTimeInSeconds
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874058460602019229, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
+      propertyPath: m_Name
+      value: 1PointTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9d91f3cccdfe224e98ad859dc2165cd, type: 3}
