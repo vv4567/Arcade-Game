@@ -36,7 +36,7 @@ public class BasketTriggerBox : MonoBehaviour
                 {
                     GameMachine.AddScore(ScoreList[ItemList.IndexOf(item)]);
 
-                    sound.Play();
+                    if (sound != null) sound.Play();
 
                     if (shouldDestroyObject)
                     { Destroy(other.gameObject); }
