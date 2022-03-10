@@ -243,7 +243,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
-    - _Metallic: 0.142919
+    - _Metallic: 0
     - _MetallicRemapMax: 0.142919
     - _MetallicRemapMin: 0
     - _Mode: 0

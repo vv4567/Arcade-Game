@@ -276,7 +276,7 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _Smoothness: 0.779
+    - _Smoothness: 0.405
     - _SmoothnessRemapMax: 0.779
     - _SmoothnessRemapMin: 0
     - _SmoothnessTextureChannel: 0
