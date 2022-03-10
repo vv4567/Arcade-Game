@@ -75,13 +75,13 @@ public class ElevatorController : MonoBehaviour
 
     public float Move(float currentPos, float targetPos, float speed)
     {
-        if (currentPos > targetPos && Mathf.Abs(currentPos - targetPos) >= speed)
+        if (currentPos > targetPos && Mathf.Abs(currentPos - targetPos) >= speed * Time.deltaTime)
         {
-            currentPos -= speed;
+            currentPos -= speed * Time.deltaTime;
         }
-        else if (currentPos < targetPos && Mathf.Abs(currentPos - targetPos) >= speed)
+        else if (currentPos < targetPos && Mathf.Abs(currentPos - targetPos) >= speed * Time.deltaTime)
         {
-            currentPos += speed;
+            currentPos += speed * Time.deltaTime;
         }
         else { currentPos = targetPos; }
         return currentPos;

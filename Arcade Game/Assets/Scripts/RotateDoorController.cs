@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class RotateDoorController : MonoBehaviour
 {
     [Header("Door Lock")]
-    public GameObject Key;
+    public List<GameObject> Key;
     public bool locked = true;
     public bool isOpen = false;
     public float DoorMovespeed = 0.005f;
@@ -67,16 +67,21 @@ public class RotateDoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Key)
+        foreach (GameObject key in Key)
         {
-            if (locked)
+            if (other.gameObject == key)
             {
-                locked = false;
+                if (locked)
+                {
+                    locked = false;
+                }
+
+                OnUnlocked.Invoke();
+                return;
             }
-            
-            OnUnlocked.Invoke();
         }
-        else if (other.tag == "Player" && locked)
+        
+        if (other.tag == "Player" && locked)
         {
             OnNoKey.Invoke();
         }
@@ -104,13 +109,13 @@ public class RotateDoorController : MonoBehaviour
     {
         float currentYRotation = door.transform.rotation.eulerAngles.y;
 
-        if (currentYRotation > targetYRotation && Mathf.Abs(currentYRotation - targetYRotation) >= speed)
+        if (currentYRotation > targetYRotation && Mathf.Abs(currentYRotation - targetYRotation) >= speed * Time.deltaTime)
         {
-            currentYRotation -= speed;
+            currentYRotation -= speed * Time.deltaTime;
         }
-        else if (currentYRotation < targetYRotation && Mathf.Abs(currentYRotation - targetYRotation) >= speed)
+        else if (currentYRotation < targetYRotation && Mathf.Abs(currentYRotation - targetYRotation) >= speed * Time.deltaTime)
         {
-            currentYRotation += speed;
+            currentYRotation += speed * Time.deltaTime;
         }
         else
         {
