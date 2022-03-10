@@ -569,6 +569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570330622133208520}
+  - component: {fileID: 853313159293191998}
   m_Layer: 0
   m_Name: R_ElevatorDoor
   m_TagString: Untagged
@@ -593,6 +594,19 @@ Transform:
   m_Father: {fileID: 3367474617668198949}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &853313159293191998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570330622133208521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &570330622406829394
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570330622603248806}
+  - component: {fileID: 5009417300689889466}
   m_Layer: 0
   m_Name: L_ElevatorDoor
   m_TagString: Untagged
@@ -709,6 +724,19 @@ Transform:
   m_Father: {fileID: 3367474617668198949}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5009417300689889466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570330622603248807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &570330622734546514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,7 +2050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f9ad93bd8275749b9023d8bfa98702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Players: []
   Elevator: {fileID: 0}
   NextLevelPos: 0
   ElevatorSpeed: 0.02
