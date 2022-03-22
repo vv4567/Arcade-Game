@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3965009526215394645}
   - component: {fileID: 3965009526215394644}
   - component: {fileID: 3965009526215394643}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ScoreBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3965009526743066415}
   - component: {fileID: 3965009526743066401}
   - component: {fileID: 3965009526743066400}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Text Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 3965009527861450571}
   - component: {fileID: 3965009527861450570}
   - component: {fileID: 3965009527861450569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 8726582248087968059}
   - component: {fileID: 8726582248087968058}
   - component: {fileID: 8726582248087968061}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FinalReward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
