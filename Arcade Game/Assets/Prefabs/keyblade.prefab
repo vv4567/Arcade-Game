@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 6003475773086611678}
   - component: {fileID: 462802274005232074}
   - component: {fileID: 5207576225539626293}
-  - component: {fileID: 2280329459585662152}
+  - component: {fileID: 2034222047683381488}
   m_Layer: 10
   m_Name: keyblade
   m_TagString: Untagged
@@ -1166,7 +1166,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2280329459585662152
+--- !u!114 &2034222047683381488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
