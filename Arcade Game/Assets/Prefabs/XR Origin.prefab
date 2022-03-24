@@ -1542,6 +1542,7 @@ MonoBehaviour:
   PositionToTeleport: {x: 0, y: 0, z: 0}
   Player: {fileID: 0}
   LockMovement: 1
+  locomotionSystem: {fileID: 8748267919514276582}
 --- !u!1 &8748267921117929679
 GameObject:
   m_ObjectHideFlags: 0

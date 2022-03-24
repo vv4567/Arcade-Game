@@ -9,7 +9,7 @@ public class Player_Teleport : MonoBehaviour
     public GameObject Player;
 
     public bool LockMovement = true;
-    public LocomotionSystem locomotionSystem;
+    public ContinuousMoveProviderBase locomotionSystem;
 
     private void Start()
     {
