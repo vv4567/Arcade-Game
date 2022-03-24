@@ -280,7 +280,8 @@ GameObject:
   - component: {fileID: 8726582248087968063}
   - component: {fileID: 8726582248087968059}
   - component: {fileID: 8726582248087968058}
-  - component: {fileID: 8726582248087968061}
+  - component: {fileID: 7633146996504992290}
+  - component: {fileID: 2679100999528297473}
   m_Layer: 10
   m_Name: FinalReward
   m_TagString: Untagged
@@ -383,7 +384,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &8726582248087968061
+--- !u!114 &7633146996504992290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -498,3 +499,20 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &2679100999528297473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8726582248087968049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2f0af6c7429094b904528a53baa07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TicketCost: 0
+  TicketCostText: {fileID: 3965009526743066400}
+  OnPickup:
+    m_PersistentCalls:
+      m_Calls: []
