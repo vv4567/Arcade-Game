@@ -1311,7 +1311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultMaterial: {fileID: 5306640586686183252, guid: b202ace145fcb754889c508b2860b7fc, type: 3}
   HighlightMaterial: {fileID: 2100000, guid: 24a700065b3a53a4589c6e986eb9bfb8, type: 2}
-  LockRenderer: {fileID: 5599205195170202061}
+  LockRenderer: {fileID: 5599205195718353238}
   MaterialIndex: 1
 --- !u!1 &5599205195794332019
 GameObject:
