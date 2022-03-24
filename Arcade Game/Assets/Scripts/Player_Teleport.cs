@@ -9,7 +9,7 @@ public class Player_Teleport : MonoBehaviour
     public GameObject Player;
 
     public bool LockMovement = true;
-    private LocomotionSystem locomotionSystem;
+    public LocomotionSystem locomotionSystem;
 
     private void Start()
     {
@@ -17,8 +17,6 @@ public class Player_Teleport : MonoBehaviour
         {
             Player = gameObject;
         }
-
-        locomotionSystem = Player.GetComponentInChildren<LocomotionSystem>();
     }
 
     public void Teleport()
