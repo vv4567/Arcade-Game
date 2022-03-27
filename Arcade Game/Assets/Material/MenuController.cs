@@ -9,4 +9,8 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("AlphaBuild");
     }
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }

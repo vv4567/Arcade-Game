@@ -11,7 +11,6 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         DisplayWristUI();
     }
     public void ExitGame()
@@ -21,13 +20,14 @@ public class PauseMenu : MonoBehaviour
     }
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("Vinson_Test");
+        SceneManager.LoadScene("Menu");
         Debug.Log("Load Menu Level");
     }
     public void MenuPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
             DisplayWristUI();
+        Debug.Log("Menu Button pressed");
 
     }
     // Update is called once per frame
@@ -37,10 +37,13 @@ public class PauseMenu : MonoBehaviour
         {
             wristUI.SetActive(false);
             activeWristUI = false;
+            Debug.Log("WRIST IS FALSE");
         }
+        else if (!activeWristUI)
         {
             wristUI.SetActive(true);
             activeWristUI = true;
+            Debug.Log("WRIST IS TRUE");
         }
 
     }

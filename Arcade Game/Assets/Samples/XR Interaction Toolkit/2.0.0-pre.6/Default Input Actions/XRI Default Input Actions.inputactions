@@ -223,15 +223,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Menu",
-                    "type": "Button",
-                    "id": "23ca4734-2e01-48ca-9997-61f2c44c3c32",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -639,39 +630,6 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Pinch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7b540915-0c0f-4630-97fa-5daccd60902a",
-                    "path": "<XRController>{LeftHand}/menu",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8bedb6c1-2708-4cb9-bb70-bd455a4a84cb",
-                    "path": "<OculusRemote>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d01c87bc-7779-47c1-a08d-f505b497f513",
-                    "path": "<XRSimulatedController>{LeftHand}/menuButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1236,6 +1194,45 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Pinch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "menu",
+            "id": "5fc71a8e-4e3a-46df-b3ba-38ee2f00b3a1",
+            "actions": [
+                {
+                    "name": "mennu input",
+                    "type": "Button",
+                    "id": "ef714d9b-278d-4e3d-9a4a-41f64285a8b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "446baeef-af5f-4ec1-b986-190b8cd8adb5",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "mennu input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d5452ca-946f-4c66-b1af-507d6561dcbb",
+                    "path": "<XRSimulatedController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "mennu input",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
