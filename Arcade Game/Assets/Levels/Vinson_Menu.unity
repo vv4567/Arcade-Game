@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_AllowMSAA
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8748267921117929679, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 8784727380136006628, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1009,6 +1013,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4184022902604737955, guid: a71e6fb0ba9b02340ba841357e8d1112, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184022902604737956, guid: a71e6fb0ba9b02340ba841357e8d1112, type: 3}
+      propertyPath: m_CheckFor2DOcclusion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184022902604737956, guid: a71e6fb0ba9b02340ba841357e8d1112, type: 3}
+      propertyPath: m_CheckFor3DOcclusion
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4184022902604737957, guid: a71e6fb0ba9b02340ba841357e8d1112, type: 3}

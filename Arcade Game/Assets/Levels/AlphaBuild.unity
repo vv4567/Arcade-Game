@@ -73553,6 +73553,10 @@ PrefabInstance:
       propertyPath: m_AllowMSAA
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8748267921117929679, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
 --- !u!1001 &1954512832
