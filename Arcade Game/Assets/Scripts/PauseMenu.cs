@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Vinson_Menu");
         Debug.Log("Load Menu Level");
     }
     public void MenuPressed(InputAction.CallbackContext context)

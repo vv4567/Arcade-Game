@@ -1044,6 +1044,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1190194573}
     m_Modifications:
+    - target: {fileID: 4996496950964190980, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1353543444}
+    - target: {fileID: 4996496950964190980, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996496951630150152, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1353543444}
+    - target: {fileID: 4996496951630150152, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996496951630150152, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9171507145995653464, guid: 777b7610fc71af04ab7d788713ff362f, type: 3}
       propertyPath: m_Name
       value: PauseMenu2
