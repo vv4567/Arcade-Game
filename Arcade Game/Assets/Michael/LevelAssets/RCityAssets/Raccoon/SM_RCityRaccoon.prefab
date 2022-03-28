@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6020578306166245469}
   - component: {fileID: 2595602726004586581}
   m_Layer: 0
-  m_Name: SM_Raccoon
+  m_Name: SM_RCityRaccoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
