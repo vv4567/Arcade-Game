@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class GameMachine : MonoBehaviour
 {
+    [Header("Machine Settings")]
     public int GameTimeInSeconds = 60;
     public ObjectSpawner ticketSpawner;
     public float NumberOfTicketsPerScore = 0.1f;
+
+    [Header("Event")]
+    public UnityEvent OnMachineStart;
+    public UnityEvent OnMachineStop;
+    public UnityEvent OnSpawningTickets;
 
     private int totalScore = 0;
     private float timeStarted = 0;
@@ -32,8 +40,9 @@ public class GameMachine : MonoBehaviour
     public virtual void StartMachine()
     {
         if (_isRunning) { return; }
-
         _isRunning = true;
+
+        OnMachineStart.Invoke();
 
         //reset machine score
         SetScore(0);
@@ -69,8 +78,11 @@ public class GameMachine : MonoBehaviour
         _isRunning = false;
         //turn off light and other effect to let player know the machine is turned off
 
+        OnMachineStop.Invoke();
 
         if (totalScore == 0) { return; }
+
+        OnSpawningTickets.Invoke();
 
         //spawn tickets
         ticketSpawner.SetQuantity(1);
