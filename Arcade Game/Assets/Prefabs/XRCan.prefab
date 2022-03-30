@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5429112022297032744}
-  - component: {fileID: 922336943354227473}
   - component: {fileID: 5081132922262746311}
   - component: {fileID: 130986683363036177}
   - component: {fileID: 7740260612746758883}
-  m_Layer: 0
+  - component: {fileID: 3752907739637492538}
+  m_Layer: 10
   m_Name: XRCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868319245535646674}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -8.93, y: 2.6856575, z: 4.54}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36,20 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &922336943354227473
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868319245535646674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6168650812902891753, guid: 68877c3bc3c84bf4e958c9c76aa2a8e2, type: 3}
 --- !u!54 &5081132922262746311
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,6 +184,20 @@ MonoBehaviour:
   m_TintOnSelection: 1
   m_TintRenderers:
   - {fileID: 1718316335603736402}
+--- !u!136 &3752907739637492538
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868319245535646674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.57}
 --- !u!1 &6383714633846763108
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +209,8 @@ GameObject:
   - component: {fileID: 2261144684153894740}
   - component: {fileID: 1718316335603736402}
   - component: {fileID: 315041109116930463}
-  m_Layer: 0
+  - component: {fileID: 138357950387871261}
+  m_Layer: 10
   m_Name: CanModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,4 +281,18 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6383714633846763108}
+  m_Mesh: {fileID: 6168650812902891753, guid: 68877c3bc3c84bf4e958c9c76aa2a8e2, type: 3}
+--- !u!64 &138357950387871261
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6383714633846763108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6168650812902891753, guid: 68877c3bc3c84bf4e958c9c76aa2a8e2, type: 3}
