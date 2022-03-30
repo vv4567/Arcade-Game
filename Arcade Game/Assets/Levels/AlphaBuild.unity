@@ -19221,6 +19221,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8f81b0e8e0e5734bbcc9bfb4cc3a0a9, type: 3}
   m_PrefabInstance: {fileID: 498144633}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &499234051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3675126495428568774, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+  m_PrefabInstance: {fileID: 1954337886}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e74bf31e7aa3fd40930a791b48c2e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &507390782
 GameObject:
   m_ObjectHideFlags: 0
@@ -73489,6 +73500,22 @@ PrefabInstance:
       propertyPath: NumberOfTickets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 964849192}
+    - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: PositionToTeleport.x
+      value: 130.4689
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: PositionToTeleport.y
+      value: 33.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: PositionToTeleport.z
+      value: 104.23
+      objectReference: {fileID: 0}
     - target: {fileID: 3714415814443532457, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_Camera
       value: 
@@ -79963,6 +79990,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 477054540961768049}
     m_Modifications:
+    - target: {fileID: 2679100999528297473, guid: 3ba73fd3dba418849a3aa413cc15518c, type: 3}
+      propertyPath: TicketCost
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8726582248087968049, guid: 3ba73fd3dba418849a3aa413cc15518c, type: 3}
       propertyPath: m_Name
       value: FinalReward
@@ -80018,11 +80049,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8726582248087968062, guid: 3ba73fd3dba418849a3aa413cc15518c, type: 3}
   m_PrefabInstance: {fileID: 2123485577}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2123485579 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8726582248087968049, guid: 3ba73fd3dba418849a3aa413cc15518c, type: 3}
+--- !u!114 &2123485580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2679100999528297473, guid: 3ba73fd3dba418849a3aa413cc15518c, type: 3}
   m_PrefabInstance: {fileID: 2123485577}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2f0af6c7429094b904528a53baa07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123964441
 GameObject:
   m_ObjectHideFlags: 0
@@ -82995,11 +83032,11 @@ Transform:
   - {fileID: 339724710}
   - {fileID: 422570199}
   - {fileID: 1585972767}
+  - {fileID: 414024615}
   - {fileID: 1091252765}
   - {fileID: 669911830}
   - {fileID: 361447763}
   - {fileID: 787772750}
-  - {fileID: 414024615}
   m_Father: {fileID: 1712414344}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -107.231, z: 0}
@@ -101256,6 +101293,15 @@ MonoBehaviour:
   GameTimeInSeconds: 0
   ticketSpawner: {fileID: 9009354013307501432}
   NumberOfTicketsPerScore: 0.1
+  OnMachineStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMachineStop:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpawningTickets:
+    m_PersistentCalls:
+      m_Calls: []
   BallSpawner: {fileID: 4672101969251147260}
   BottleSpawner: {fileID: 518109656508686086}
   BallCounter: []
@@ -102930,6 +102976,15 @@ MonoBehaviour:
   GameTimeInSeconds: 30
   ticketSpawner: {fileID: 932974781940733141}
   NumberOfTicketsPerScore: 0.1
+  OnMachineStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMachineStop:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpawningTickets:
+    m_PersistentCalls:
+      m_Calls: []
   moleList:
   - {fileID: 788555982404793005}
   - {fileID: 534829295736030236}
@@ -102951,6 +103006,15 @@ MonoBehaviour:
   GameTimeInSeconds: 30
   ticketSpawner: {fileID: 932974779904197723}
   NumberOfTicketsPerScore: 0.1
+  OnMachineStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMachineStop:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpawningTickets:
+    m_PersistentCalls:
+      m_Calls: []
   moleList:
   - {fileID: 788555980677849635}
   - {fileID: 534829296389100690}
@@ -103127,12 +103191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7f631c160926841a2f828618d0fe1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TicketCounter: {fileID: 0}
+  TicketCounter: {fileID: 499234051}
   player:
   - {fileID: 1567831749}
   - {fileID: 964849192}
   RewardList:
-  - {fileID: 2123485579}
+  - {fileID: 2123485580}
 --- !u!33 &8855427864887078594
 MeshFilter:
   m_ObjectHideFlags: 0
