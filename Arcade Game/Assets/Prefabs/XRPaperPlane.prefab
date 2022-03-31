@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5075922390302303511}
   - component: {fileID: 3197739284885258724}
   - component: {fileID: 2539095575885248404}
+  - component: {fileID: 5823097785711208873}
   m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5823097785711208873
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274247924685417523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2116740322391302584, guid: 74dedfcbd4a2ae94fbc1b43de0cb6ee0, type: 3}
 --- !u!1 &1556378701514621582
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,10 +108,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6273654435431574081}
   - component: {fileID: 1483435019644216330}
-  - component: {fileID: 517152903507467949}
   - component: {fileID: 1451388231849984117}
   - component: {fileID: 6219470027710223783}
-  m_Layer: 0
+  - component: {fileID: 8709313939408423010}
+  m_Layer: 10
   m_Name: XRPaperPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,20 +150,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &517152903507467949
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556378701514621582}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2116740322391302584, guid: 74dedfcbd4a2ae94fbc1b43de0cb6ee0, type: 3}
 --- !u!114 &1451388231849984117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,3 +282,17 @@ MonoBehaviour:
   m_TintOnSelection: 1
   m_TintRenderers:
   - {fileID: 0}
+--- !u!136 &8709313939408423010
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556378701514621582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.56, z: -0.3}

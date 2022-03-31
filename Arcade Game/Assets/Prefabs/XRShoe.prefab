@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1483435019644216330}
   - component: {fileID: 1451388231849984117}
   - component: {fileID: 6219470027710223783}
-  m_Layer: 0
+  - component: {fileID: 8010745770013464481}
+  m_Layer: 10
   m_Name: XRShoe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,8 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 7760863053853393306}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -184,6 +184,19 @@ MonoBehaviour:
   m_TintOnSelection: 1
   m_TintRenderers:
   - {fileID: 0}
+--- !u!65 &8010745770013464481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556378701514621582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.118464746, y: 0.13732114, z: 0.2889918}
+  m_Center: {x: -0.1601643, y: 0.07268426, z: 0.055326976}
 --- !u!1 &7253494702810564211
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +208,6 @@ GameObject:
   - component: {fileID: 5804706785063568909}
   - component: {fileID: 6177284175750695904}
   - component: {fileID: 1107558465608096390}
-  - component: {fileID: 7760863053853393306}
   m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
@@ -268,16 +280,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7760863053853393306
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7253494702810564211}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.118464746, y: 0.13732114, z: 0.2889918}
-  m_Center: {x: -0.1601643, y: 0.07268426, z: 0.055326976}

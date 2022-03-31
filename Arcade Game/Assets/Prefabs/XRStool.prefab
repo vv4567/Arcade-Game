@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8374733742604232282}
   - component: {fileID: 3627511384416182043}
   - component: {fileID: 7343622234312353542}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SM_BLKStool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,8 @@ GameObject:
   - component: {fileID: 8398801088335475371}
   - component: {fileID: 8371840481312176220}
   - component: {fileID: 7040300275892629502}
-  m_Layer: 0
+  - component: {fileID: 7363227213555923690}
+  m_Layer: 10
   m_Name: XRStool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +130,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6657622691585358142}
-  - {fileID: 4144660808754232366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -180,8 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 6249392480327412826}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -283,6 +282,19 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!65 &7363227213555923690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083784254990847288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.62, y: 15.44, z: 33.27}
+  m_Center: {x: 23.36, y: 116.5, z: -0.87}
 --- !u!1 &3067107654440317880
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6657622691585358142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,51 +328,6 @@ Transform:
   m_Father: {fileID: 2706770529645442310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3724152474708999341
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4144660808754232366}
-  - component: {fileID: 6249392480327412826}
-  m_Layer: 0
-  m_Name: InteractBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4144660808754232366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3724152474708999341}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.8, y: 115.5, z: -1.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2706770529645442310}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6249392480327412826
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3724152474708999341}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.62, y: 15.44, z: 33.27}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8515739273742291363
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +340,7 @@ GameObject:
   - component: {fileID: 602949491860725375}
   - component: {fileID: 2399549989622897011}
   - component: {fileID: 2832785415828620013}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SM_SILVStool
   m_TagString: Untagged
   m_Icon: {fileID: 0}

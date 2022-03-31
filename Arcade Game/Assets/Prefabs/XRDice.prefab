@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1483435019644216330}
   - component: {fileID: 1451388231849984117}
   - component: {fileID: 6219470027710223783}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: XRDice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,8 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 0}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
