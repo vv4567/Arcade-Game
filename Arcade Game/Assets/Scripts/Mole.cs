@@ -15,9 +15,9 @@ public class Mole : MonoBehaviour
 
     public UnityEvent onPress;
     public UnityEvent onRelease;
+    public UnityEvent onPopup;
 
     private GameObject presser;
-    public AudioSource sound;
 
     private bool isPressed;
     public bool isActive;
@@ -28,7 +28,6 @@ public class Mole : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        sound = GetComponent<AudioSource>();
         isPressed = true;
         isActive = false;
         initialLocalPosition = molePrefab.transform.localPosition;
@@ -57,7 +56,6 @@ public class Mole : MonoBehaviour
             FallDown();
             presser = other.gameObject;
             onPress.Invoke();
-            sound.Play();
         }
     }
 
@@ -87,6 +85,7 @@ public class Mole : MonoBehaviour
 
     public void PopUp()
     {
+        onPopup.Invoke();
         molePrefab.transform.localPosition = initialLocalPosition;
         StartCoroutine(DelayColliderCo());
 
