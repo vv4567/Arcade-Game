@@ -11,6 +11,7 @@ public class RotateDoorController : MonoBehaviour
     public bool locked = true;
     public bool isOpen = false;
     public float DoorMovespeed = 0.005f;
+    public List<LockHighlight> Locks;
 
     [Header("Left Door")]
     public GameObject LDoor;
@@ -102,6 +103,24 @@ public class RotateDoorController : MonoBehaviour
 
         OnCloseStart.Invoke();
         isClosing = true;
+    }
+
+    public void HighlightLocks(bool flag = true)
+    {
+        if (Locks != null && Locks.Count > 0)
+        {
+            foreach(LockHighlight lockHighlight in Locks)
+            {
+                if (flag)
+                {
+                    lockHighlight.Highlight();
+                }
+                else
+                {
+                    lockHighlight.Unhighlight();
+                }
+            }
+        }
     }
 
     public bool RotateDoor(GameObject door, float targetYRotation, float speed)

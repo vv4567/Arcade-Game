@@ -1746,12 +1746,15 @@ MonoBehaviour:
   - {fileID: 0}
   locked: 1
   isOpen: 0
-  DoorMovespeed: 1
+  DoorMovespeed: 45
+  Locks:
+  - {fileID: 7745631811396176084}
+  - {fileID: 8405342729084181081}
   LDoor: {fileID: 4727898734787428959}
-  LDoor_YRotation_Open: 160
+  LDoor_YRotation_Open: 140
   LDoor_YRotation_Close: 0
   RDoor: {fileID: 5599205195575104629}
-  RDoor_YRotation_Open: -160
+  RDoor_YRotation_Open: -140
   RDoor_YRotation_Close: 0
   OnNoKey:
     m_PersistentCalls:
