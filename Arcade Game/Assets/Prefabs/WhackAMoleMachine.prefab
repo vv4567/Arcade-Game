@@ -350,8 +350,8 @@ Transform:
   m_GameObject: {fileID: 6417349047070187680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.948, y: 0.23, z: 3.495}
-  m_LocalScale: {x: 2.2, y: 1.1, z: 2.2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.38, y: 0.8, z: 1.38}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5108691555827590934}
   - {fileID: 5438145972092440999}
@@ -539,38 +539,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3167739640348651940}
     m_Modifications:
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8759398440585404918}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMachine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_Name
       value: Mole (4)
@@ -742,38 +710,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3167739640348651940}
     m_Modifications:
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8759398440585404918}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMachine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_Name
       value: Mole (1)
@@ -785,18 +721,6 @@ PrefabInstance:
     - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.0106387
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4999999
       objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_LocalPosition.x
@@ -838,10 +762,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
 --- !u!114 &534829296549280932 stripped
@@ -867,61 +787,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3167739640348651940}
     m_Modifications:
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8759398440585404918}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMachine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_Name
       value: Mole
       objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.0106387
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4999999
       objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_LocalPosition.x
@@ -962,10 +834,6 @@ PrefabInstance:
     - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7987860400599030697, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
@@ -1226,38 +1094,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3167739640348651940}
     m_Modifications:
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8759398440585404918}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMachine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_Name
       value: Mole (2)
@@ -1351,38 +1187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3167739640348651940}
     m_Modifications:
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8759398440585404918}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMachine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508118161218172586, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
-      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7987860400599030694, guid: 0d0b8ae7b2405ea45a296e3e86ae2712, type: 3}
       propertyPath: m_Name
       value: Mole (3)

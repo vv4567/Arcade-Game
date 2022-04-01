@@ -11,6 +11,11 @@ public class Player_Teleport : MonoBehaviour
     public bool LockMovement = true;
     public ContinuousMoveProviderBase locomotionSystem;
 
+    public float TeleportDelay = 0;
+
+    public FadeScreen TransitionScreen;
+    public Color TransitionColor;
+
     private void Start()
     {
         if (Player == null)
@@ -26,6 +31,26 @@ public class Player_Teleport : MonoBehaviour
             locomotionSystem.enabled = false;
         }
 
+        if (TransitionScreen != null)
+        {
+            TransitionScreen.FadeTo(TransitionColor);
+        }
+
+        if (TeleportDelay > 0)
+        {
+            StartCoroutine(TeleportCo());
+            return;
+        }
+
         Player.transform.position = PositionToTeleport;
+    }
+
+    IEnumerator TeleportCo()
+    {
+        yield return new WaitForSeconds(TeleportDelay);
+        Player.transform.position = PositionToTeleport;
+        Player.transform.rotation = Quaternion.identity;
+
+        TransitionScreen.Fade(FadeScreen.FadeType.FadeOut);
     }
 }
