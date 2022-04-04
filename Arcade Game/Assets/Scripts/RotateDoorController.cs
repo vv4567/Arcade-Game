@@ -44,24 +44,24 @@ public class RotateDoorController : MonoBehaviour
         {
             if (LDoor != null)
             {
-                LDoor.transform.rotation = Quaternion.Euler(LDoor.transform.rotation.eulerAngles.x, LDoor_YRotation_Open, LDoor.transform.rotation.eulerAngles.z);
+                LDoor.transform.localRotation = Quaternion.Euler(LDoor.transform.localRotation.eulerAngles.x, LDoor_YRotation_Open, LDoor.transform.localRotation.eulerAngles.z);
             }
 
             if (RDoor != null)
             {
-                RDoor.transform.rotation = Quaternion.Euler(RDoor.transform.rotation.eulerAngles.x, RDoor_YRotation_Open, RDoor.transform.rotation.eulerAngles.z);
+                RDoor.transform.localRotation = Quaternion.Euler(RDoor.transform.localRotation.eulerAngles.x, RDoor_YRotation_Open, RDoor.transform.localRotation.eulerAngles.z);
             }
         }
         else
         {
             if (LDoor != null)
             {
-                LDoor.transform.rotation = Quaternion.Euler(LDoor.transform.rotation.eulerAngles.x, LDoor_YRotation_Close, LDoor.transform.rotation.eulerAngles.z);
+                LDoor.transform.localRotation = Quaternion.Euler(LDoor.transform.localRotation.eulerAngles.x, LDoor_YRotation_Close, LDoor.transform.localRotation.eulerAngles.z);
             }
 
             if (RDoor != null)
             {
-                RDoor.transform.rotation = Quaternion.Euler(RDoor.transform.rotation.eulerAngles.x, RDoor_YRotation_Close, RDoor.transform.rotation.eulerAngles.z);
+                RDoor.transform.localRotation = Quaternion.Euler(RDoor.transform.localRotation.eulerAngles.x, RDoor_YRotation_Close, RDoor.transform.localRotation.eulerAngles.z);
             }
         }
     }
@@ -125,7 +125,7 @@ public class RotateDoorController : MonoBehaviour
 
     public bool RotateDoor(GameObject door, float targetYRotation, float speed)
     {
-        float currentYRotation = door.transform.rotation.eulerAngles.y;
+        float currentYRotation = door.transform.localRotation.eulerAngles.y;
 
         if (currentYRotation > targetYRotation && Mathf.Abs(currentYRotation - targetYRotation) >= speed * Time.deltaTime)
         {
@@ -137,11 +137,11 @@ public class RotateDoorController : MonoBehaviour
         }
         else
         {
-            door.transform.rotation = Quaternion.Euler(door.transform.rotation.eulerAngles.x, targetYRotation, door.transform.rotation.eulerAngles.z);
+            door.transform.localRotation = Quaternion.Euler(door.transform.localRotation.eulerAngles.x, targetYRotation, door.transform.localRotation.eulerAngles.z);
             return true;
         }
 
-        door.transform.rotation = Quaternion.Euler(door.transform.rotation.eulerAngles.x, currentYRotation, door.transform.rotation.eulerAngles.z);
+        door.transform.localRotation = Quaternion.Euler(door.transform.localRotation.eulerAngles.x, currentYRotation, door.transform.localRotation.eulerAngles.z);
         
         return false;
 
