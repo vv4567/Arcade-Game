@@ -55,6 +55,21 @@ public class Ticket : MonoBehaviour
         }
     }
 
+    public void CollectTicket()
+    {
+        if (ticketCount != null)
+        {
+            ticketCount.NumberOfTickets += ticketValue;
+        }
+        else
+        {
+            Debug.Log("Cannot find ticketCount");
+        }
+
+        Destroy(this.gameObject);
+    }
+
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -72,4 +87,5 @@ public class Ticket : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    */
 }

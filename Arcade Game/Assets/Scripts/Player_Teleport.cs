@@ -51,6 +51,6 @@ public class Player_Teleport : MonoBehaviour
         Player.transform.position = PositionToTeleport;
         Player.transform.rotation = Quaternion.identity;
 
-        TransitionScreen.Fade(FadeScreen.FadeType.FadeOut);
+        //TransitionScreen.Fade(FadeScreen.FadeType.FadeOut);
     }
 }

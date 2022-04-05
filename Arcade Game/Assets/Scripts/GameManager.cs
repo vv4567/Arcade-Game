@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnGameStart;
     public UnityEvent OnGamePause;
     public UnityEvent OnGameEnd;
+    public UnityEvent OnTimeOut;
 
 
     private void OnEnable()
@@ -137,7 +138,7 @@ public class GameManager : MonoBehaviour
                 gameOverText.text = "You Lose";
             }
 
-            OnGameEnd.Invoke();
+            OnTimeOut.Invoke();
         }
     }
 }
