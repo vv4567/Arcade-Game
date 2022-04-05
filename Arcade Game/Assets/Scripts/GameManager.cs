@@ -2,19 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     public double gameTime = 0;
     private double deltaTime = 0;
     private int lastTimeUpdate = -1;
+    private double pauseTime = 0;
+    private double pauseTimeStart = -1;
 
     public Text timerText;
     public Text gameOverText;
     public GameObject player;
     public GameObject playerFirstPerson;
 
-    private void Awake()
+    public static bool GameStart { get; set; }
+    public static bool GamePause { get; set; }
+    public static bool GameEnd { get; set; }
+
+    public UnityEvent OnGameStart;
+    public UnityEvent OnGamePause;
+    public UnityEvent OnGameEnd;
+    public UnityEvent OnTimeOut;
+
+
+    private void OnEnable()
     {
         if (gameOverText != null)
         {
@@ -57,18 +70,46 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (deltaTime < 0)
+        if (deltaTime < 0 || !GameStart)
         {
             return;
         }
+
+        if (deltaTime > 0 && GameEnd)
+        {
+            if (gameOverText != null)
+            {
+                gameOverText.text = "You Win";
+            }
+
+            OnGameEnd.Invoke();
+
+            return;
+        }
+
 
         if (lastTimeUpdate == -1)
         {
             gameTime += Time.fixedUnscaledTimeAsDouble;
             lastTimeUpdate = 0;
+            OnGameStart.Invoke();
         }
 
-        deltaTime = gameTime - Time.fixedUnscaledTimeAsDouble;
+        if (GamePause)
+        {
+            if (pauseTimeStart == -1)
+            {
+                pauseTimeStart = Time.fixedUnscaledTimeAsDouble;
+                OnGamePause.Invoke();
+            }
+            pauseTime += Time.fixedUnscaledTimeAsDouble - pauseTimeStart;
+        }
+        else
+        {
+            pauseTimeStart = -1;
+        }
+
+        deltaTime = gameTime - Time.fixedUnscaledTimeAsDouble + pauseTime;
 
         if (lastTimeUpdate != (int)deltaTime)
         {
@@ -78,12 +119,15 @@ public class GameManager : MonoBehaviour
             if (timerText != null)
             {
                 timerText.text = "Timer: " + " " + SecondToTimeText(lastTimeUpdate);
+              
             }
+            Debug.Log("Timer: " + " " + SecondToTimeText(lastTimeUpdate));
         }
 
-        if (deltaTime <= 0)
+        if (deltaTime <= 0 && !GameEnd)
         {
-            //Debug.Log("Time Out!");
+            GameEnd = true;
+
             deltaTime = -1;
 
             if (timerText != null)
@@ -93,18 +137,10 @@ public class GameManager : MonoBehaviour
 
             if (gameOverText != null)
             {
-                gameOverText.text = "Game Over";
+                gameOverText.text = "You Lose";
             }
 
-            if (player != null)
-            {
-                player.SetActive(false);
-            }
-
-            if (playerFirstPerson != null)
-            {
-                playerFirstPerson.SetActive(false);
-            }
+            OnTimeOut.Invoke();
         }
     }
 }

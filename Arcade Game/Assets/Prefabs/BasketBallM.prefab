@@ -156,6 +156,15 @@ MonoBehaviour:
   GameTimeInSeconds: 60
   ticketSpawner: {fileID: 2275249920826868288}
   NumberOfTicketsPerScore: 0.1
+  OnMachineStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMachineStop:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpawningTickets:
+    m_PersistentCalls:
+      m_Calls: []
   ballSpawner: {fileID: 2797754826327872658}
   NumberOfBalls: 4
   BallCounter: []
@@ -770,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9696c01dd8653b547b78ce12d8d807dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnedObject: {fileID: 3311688621241741257, guid: e0b9fb30c18863048880791e8680073e, type: 3}
+  SpawnedObject: {fileID: 1556378701514621582, guid: 32cca6a71e51e5842b738927a43a2eb3, type: 3}
   SpawnDelay: 0.1
 --- !u!1 &7215191987490602481
 GameObject:

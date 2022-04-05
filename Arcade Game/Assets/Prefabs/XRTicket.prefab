@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1951875752090278666}
   - component: {fileID: 7331079846896872990}
   - component: {fileID: 1483435019644216330}
-  - component: {fileID: 6219470027710223783}
   - component: {fileID: 1451388231849984117}
+  - component: {fileID: 3833941803298494361}
   m_Layer: 10
   m_Name: XRTicket
   m_TagString: Untagged
@@ -88,23 +88,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6219470027710223783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556378701514621582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.5254902}
-  m_TintOnHover: 1
-  m_TintOnSelection: 1
-  m_TintRenderers:
-  - {fileID: 0}
 --- !u!114 &1451388231849984117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +129,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1951875752090278666}
+        m_TargetAssemblyTypeName: Ticket, Assembly-CSharp
+        m_MethodName: CollectTicket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -220,6 +215,25 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &3833941803298494361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556378701514621582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers:
+  - {fileID: 6453922569294779022}
+  - {fileID: 4282494928473159708}
+  - {fileID: 936882132791849135}
 --- !u!1001 &1928082664646339627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -301,6 +315,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b49a68fb9b88d9408cc650dd634274a, type: 3}
+--- !u!23 &936882132791849135 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 6b49a68fb9b88d9408cc650dd634274a, type: 3}
+  m_PrefabInstance: {fileID: 1928082664646339627}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1585413468026589562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b49a68fb9b88d9408cc650dd634274a, type: 3}
@@ -402,6 +421,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 969815a3e5a0a3d46b8c91ce4ff4a7d1, type: 3}
   m_PrefabInstance: {fileID: 3220055950101537944}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &4282494928473159708 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 969815a3e5a0a3d46b8c91ce4ff4a7d1, type: 3}
+  m_PrefabInstance: {fileID: 3220055950101537944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5643403684253765130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,5 +515,10 @@ GameObject:
 --- !u!4 &5322090090228279777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8d705783beb5954b8a75a6385de9631, type: 3}
+  m_PrefabInstance: {fileID: 5643403684253765130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6453922569294779022 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: e8d705783beb5954b8a75a6385de9631, type: 3}
   m_PrefabInstance: {fileID: 5643403684253765130}
   m_PrefabAsset: {fileID: 0}
