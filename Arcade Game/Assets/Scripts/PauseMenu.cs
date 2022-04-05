@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject wristUI;
+    public GameObject wristUI = null;
 
     public bool activeWristUI = true;
     // Start is called before the first frame update
@@ -33,6 +33,10 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
   public void DisplayWristUI()
     {
+
+        if (wristUI == null)
+            return;
+        
         if(activeWristUI)
         {
             wristUI.SetActive(false);

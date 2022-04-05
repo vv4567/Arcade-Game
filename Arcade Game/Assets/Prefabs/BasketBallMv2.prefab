@@ -2164,6 +2164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TicketSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 3650860304136897304, guid: e103353b96f367247abbcea94ad2c567, type: 3}
+      propertyPath: SpawnedObject
+      value: 
+      objectReference: {fileID: 1556378701514621582, guid: 32cca6a71e51e5842b738927a43a2eb3, type: 3}
     - target: {fileID: 7790886154813804933, guid: e103353b96f367247abbcea94ad2c567, type: 3}
       propertyPath: m_RootOrder
       value: 6

@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject playerFirstPerson;
 
-    public bool GameStart = false;
-    public bool GamePause = false;
-    public bool GameEnd = false;
+    public static bool GameStart { get; set; }
+    public static bool GamePause { get; set; }
+    public static bool GameEnd { get; set; }
 
     public UnityEvent OnGameStart;
     public UnityEvent OnGamePause;
@@ -119,7 +119,9 @@ public class GameManager : MonoBehaviour
             if (timerText != null)
             {
                 timerText.text = "Timer: " + " " + SecondToTimeText(lastTimeUpdate);
+              
             }
+            Debug.Log("Timer: " + " " + SecondToTimeText(lastTimeUpdate));
         }
 
         if (deltaTime <= 0 && !GameEnd)
