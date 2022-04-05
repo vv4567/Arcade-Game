@@ -30,6 +30,16 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Menu Button pressed");
 
     }
+
+    public void ToggleWristUI()
+    {
+        if (Input.GetButtonDown("Button.Four"))
+        {
+            DisplayWristUI();
+            Debug.Log("Menu Button pressed");
+        }
+    }
+
     // Update is called once per frame
   public void DisplayWristUI()
     {
@@ -50,5 +60,10 @@ public class PauseMenu : MonoBehaviour
             Debug.Log("WRIST IS TRUE");
         }
 
+    }
+
+    private void Update()
+    {
+        ToggleWristUI();
     }
 }
