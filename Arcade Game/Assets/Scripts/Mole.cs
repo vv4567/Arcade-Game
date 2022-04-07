@@ -32,12 +32,12 @@ public class Mole : MonoBehaviour
         isActive = false;
         initialLocalPosition = molePrefab.transform.localPosition;
 
-        Debug.Log(initialLocalPosition);
+        //Debug.Log(initialLocalPosition);
 
         pressedLocalPosition = molePrefab.transform.localPosition - new Vector3(0f, pressedDeltaHeight, 0f);
 
 
-        Debug.Log(pressedLocalPosition);
+        //Debug.Log(pressedLocalPosition);
 
         molePrefab.transform.localPosition = pressedLocalPosition;
     }

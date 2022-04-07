@@ -31,13 +31,17 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+
+
     public void ToggleWristUI()
     {
-        if (Input.GetButtonDown("Button.Four"))
+
+        if (Input.GetButtonDown("Pause"))
         {
             DisplayWristUI();
             Debug.Log("Menu Button pressed");
         }
+
     }
 
     // Update is called once per frame

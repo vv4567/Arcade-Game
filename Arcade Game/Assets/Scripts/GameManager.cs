@@ -119,9 +119,9 @@ public class GameManager : MonoBehaviour
             if (timerText != null)
             {
                 timerText.text = "Timer: " + " " + SecondToTimeText(lastTimeUpdate);
-              
+
             }
-            Debug.Log("Timer: " + " " + SecondToTimeText(lastTimeUpdate));
+            else { Debug.Log("Timer: " + " " + SecondToTimeText(lastTimeUpdate)); }
         }
 
         if (deltaTime <= 0 && !GameEnd)
