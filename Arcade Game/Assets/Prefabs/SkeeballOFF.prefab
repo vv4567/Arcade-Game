@@ -8547,6 +8547,10 @@ PrefabInstance:
       propertyPath: SpawnedObject
       value: 
       objectReference: {fileID: 1556378701514621582, guid: 32cca6a71e51e5842b738927a43a2eb3, type: 3}
+    - target: {fileID: 4727135351910656773, guid: e103353b96f367247abbcea94ad2c567, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7790886154813804933, guid: e103353b96f367247abbcea94ad2c567, type: 3}
       propertyPath: m_RootOrder
       value: 2
