@@ -58116,6 +58116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b05a7e428552c49aa1cf2887ae2737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 3
 --- !u!82 &1423128883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58172,7 +58173,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
