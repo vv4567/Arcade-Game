@@ -48,6 +48,7 @@ public class BottleStack : MonoBehaviour
 
         if (knockedOver) { return; }
 
+        /*
         for(int i = 0; i < Bottles.Count; ++i)
         {
             if (Bottles[i].transform.position != BottlePositions[i])
@@ -56,6 +57,7 @@ public class BottleStack : MonoBehaviour
                 break;
             }
         }
+        */
 
         if (Key != null) { Key.SetActive(true); }
     }
