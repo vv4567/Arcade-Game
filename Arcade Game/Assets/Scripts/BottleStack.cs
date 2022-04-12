@@ -12,7 +12,7 @@ public class BottleStack : MonoBehaviour
 
     protected List<Vector3> BottlePositions;
 
-    private bool knockedOver = false;
+    public bool knockedOver = false;
 
     public Event OnKnockedOver;
 
