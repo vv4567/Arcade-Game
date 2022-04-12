@@ -165,7 +165,7 @@ Transform:
   - {fileID: 429548823}
   - {fileID: 539507882}
   m_Father: {fileID: 1712414344}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6410295
 GameObject:
@@ -2179,7 +2179,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -2233,6 +2233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (19)
@@ -3171,7 +3175,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -3225,6 +3229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (7)
@@ -13892,6 +13900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (1)
@@ -14269,7 +14281,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -14323,6 +14335,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (11)
@@ -23631,7 +23647,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712414344}
-  m_RootOrder: 43
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 30.047, z: 0}
 --- !u!23 &484793059
 MeshRenderer:
@@ -33317,6 +33333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (2)
@@ -34196,7 +34216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -34250,6 +34270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (5)
@@ -38286,7 +38310,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -38340,6 +38364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (15)
@@ -40306,7 +40334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -40360,6 +40388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (6)
@@ -40403,7 +40435,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -40457,6 +40489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (14)
@@ -45934,7 +45970,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -45988,6 +46024,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (18)
@@ -46753,7 +46793,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -46807,6 +46847,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (12)
@@ -53609,7 +53653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -53663,6 +53707,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (13)
@@ -57466,7 +57514,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -57520,6 +57568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (21)
@@ -59502,7 +59554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -59556,6 +59608,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (10)
@@ -74926,7 +74982,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -74980,6 +75036,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (17)
@@ -75301,7 +75361,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -75355,6 +75415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (16)
@@ -75513,6 +75577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2
@@ -86374,7 +86442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -86428,6 +86496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd0be3ca619253d4aa99d985cad52d7c, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (20)
@@ -87797,9 +87869,9 @@ Transform:
   - {fileID: 5952537247858976600}
   - {fileID: 1250375604}
   - {fileID: 2141215292}
+  - {fileID: 4133023}
   - {fileID: 1493345212}
   - {fileID: 990439285}
-  - {fileID: 4133023}
   - {fileID: 1438818172}
   - {fileID: 882828455}
   - {fileID: 1753968951}
@@ -87809,10 +87881,10 @@ Transform:
   - {fileID: 1525234817}
   - {fileID: 1953347160}
   - {fileID: 127800438}
+  - {fileID: 484793058}
   - {fileID: 1966097797}
   - {fileID: 1996896307}
   - {fileID: 676503442}
-  - {fileID: 484793058}
   - {fileID: 195303082}
   - {fileID: 729618306}
   - {fileID: 1898161754}
@@ -107352,7 +107424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -107406,6 +107478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b9b2461c144d3648bb484d385d1c8f6, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (9)
@@ -107449,7 +107525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_LocalScale.x
@@ -107503,6 +107579,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3873697becdf424e9f3e5f1cd60220f, type: 2}
     - target: {fileID: 919132149155446097, guid: 041e88d3d924d4c468d8b355fbd7e250, type: 3}
       propertyPath: m_Name
       value: SM_ArcadeCabinet_janzer_2 (8)
