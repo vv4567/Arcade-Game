@@ -30,6 +30,13 @@ public class ElevatorController : MonoBehaviour
     public bool AutoStart = false;
     private bool done = false;
 
+    protected AudioSource _audioSource;
+
+    private void OnEnable()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
         if (Elevator == null)
@@ -50,6 +57,11 @@ public class ElevatorController : MonoBehaviour
     public void StartElevator()
     {
         if (DoOnce && done) { return; }
+
+        if (_audioSource != null)
+        {
+            _audioSource.Play();
+        }
 
         if (!IsMoving) 
         { 
@@ -103,6 +115,13 @@ public class ElevatorController : MonoBehaviour
             
             Elevator.transform.position = new Vector3(Elevator.transform.position.x, CurrentLevelPos, Elevator.transform.position.z);
 
+        }
+        else
+        {
+            if (_audioSource != null && _audioSource.isPlaying)
+            {
+                _audioSource.Stop();
+            }
         }
 
         if (IsOpeningDoors)

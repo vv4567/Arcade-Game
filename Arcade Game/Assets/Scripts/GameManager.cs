@@ -6,21 +6,27 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Game Settings")]
     public double gameTime = 0;
     private double deltaTime = 0;
     private int lastTimeUpdate = -1;
     private double pauseTime = 0;
     private double pauseTimeStart = -1;
 
+    [Header("Player Settings")]
+    public bool FirstPersonMode = false;
+    public GameObject playerOVR;
+    public GameObject playerFirstPerson;
+
+    [Header("UI")]
     public Text timerText;
     public Text gameOverText;
-    public GameObject player;
-    public GameObject playerFirstPerson;
 
     public static bool GameStart { get; set; }
     public static bool GamePause { get; set; }
     public static bool GameEnd { get; set; }
 
+    [Header("Game Events")]
     public UnityEvent OnGameStart;
     public UnityEvent OnGamePause;
     public UnityEvent OnGameEnd;
@@ -33,6 +39,18 @@ public class GameManager : MonoBehaviour
         {
             gameOverText.text = "";
         }
+
+
+        if (playerFirstPerson != null)
+        {
+            playerFirstPerson.SetActive(FirstPersonMode);
+        }
+
+        if (playerOVR != null)
+        {
+            playerOVR.SetActive(!FirstPersonMode);
+        }
+
     }
 
     public string SecondToTimeText(double timeInSeconds)

@@ -128,6 +128,10 @@ public class GameMachine : MonoBehaviour
             }
 
         }
+        else if (timeCounter != 0)
+        {
+            timeCounter = 0;
+        }
     }
 
     public int getRemainingTime()

@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 1067166496062825562}
   - component: {fileID: 3172673774336538625}
   - component: {fileID: 7708467222881827214}
+  - component: {fileID: 7953512977809022667}
   m_Layer: 10
   m_Name: Mallet
   m_TagString: Untagged
@@ -89,7 +90,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.049353298, z: 0.006296888}
   m_LocalScale: {x: 0.03, y: 0.10000001, z: 0.045999993}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3893519863309327387}
   - {fileID: 7763738708775719781}
@@ -242,6 +243,21 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &7953512977809022667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478090943937176276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb892ced92ae24f8507ab01d61dc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetInitialPosition: 0
+  UseLocalPosition: 0
+  InitialPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7401802383535363698
 GameObject:
   m_ObjectHideFlags: 0
