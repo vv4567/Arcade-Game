@@ -35,7 +35,7 @@ Material:
         m_Offset: {x: 0.28, y: 0.12}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: ce80cd5b749a1024187be9955d8f0b2d, type: 3}
-        m_Scale: {x: 10.89, y: 2.99}
+        m_Scale: {x: 2.84, y: 13.33}
         m_Offset: {x: 2.4, y: 0.51}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
@@ -91,7 +91,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: ce80cd5b749a1024187be9955d8f0b2d, type: 3}
-        m_Scale: {x: 10.89, y: 2.99}
+        m_Scale: {x: 2.84, y: 13.33}
         m_Offset: {x: 2.4, y: 0.51}
     - _MaskMap:
         m_Texture: {fileID: 2800000, guid: 6052c122918180145954c55b4f78662f, type: 3}
@@ -227,7 +227,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
-    - _Metallic: 0.025598569
+    - _Metallic: 0
     - _MetallicRemapMax: 0.35382023
     - _MetallicRemapMin: 0
     - _Mode: 0
@@ -247,7 +247,7 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _Smoothness: 0
+    - _Smoothness: 0.908
     - _SmoothnessRemapMax: 0.5562898
     - _SmoothnessRemapMin: 0
     - _SmoothnessTextureChannel: 0
@@ -291,9 +291,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.97422504, g: 0.9198113, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.974225, g: 0.9198113, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

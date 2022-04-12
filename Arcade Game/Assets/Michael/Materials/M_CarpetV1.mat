@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_CarpetV1
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _NORMALMAP_TANGENT_SPACE
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -34,8 +34,8 @@ Material:
         m_Scale: {x: 10.48, y: 11.52}
         m_Offset: {x: 2.37, y: 4.02}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 506e92cffa403014bb4c8d0375705a4f, type: 3}
-        m_Scale: {x: 14.01, y: 18.39}
+        m_Texture: {fileID: 2800000, guid: 59b36cec6f90786409a7a30266c85dcb, type: 3}
+        m_Scale: {x: 15.16, y: 18.39}
         m_Offset: {x: 2.37, y: 4.02}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
@@ -70,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 59b36cec6f90786409a7a30266c85dcb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
@@ -90,8 +90,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 506e92cffa403014bb4c8d0375705a4f, type: 3}
-        m_Scale: {x: 14.01, y: 18.39}
+        m_Texture: {fileID: 2800000, guid: 59b36cec6f90786409a7a30266c85dcb, type: 3}
+        m_Scale: {x: 15.16, y: 18.39}
         m_Offset: {x: 2.37, y: 4.02}
     - _MaskMap:
         m_Texture: {fileID: 0}
@@ -296,7 +296,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
