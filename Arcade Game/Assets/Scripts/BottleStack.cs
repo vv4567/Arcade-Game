@@ -14,8 +14,6 @@ public class BottleStack : MonoBehaviour
 
     public bool knockedOver = false;
 
-    public Event OnKnockedOver;
-
     private void OnEnable()
     {
         Key = GameObject.Find(KeyObjectName);
@@ -30,10 +28,19 @@ public class BottleStack : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(RecordPositionCo());
+    }
+
+    IEnumerator RecordPositionCo()
+    {
+        yield return new WaitForSeconds(5);
+
         foreach (GameObject bottle in Bottles)
         {
             BottlePositions.Add(bottle.transform.position);
         }
+
+        knockedOver = false;
     }
 
     private void Update()
