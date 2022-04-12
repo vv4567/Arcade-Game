@@ -1,29 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Bottle : MonoBehaviour
 {
     public GameObject Key;
-    public List<string> IgnoreObjects;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == this.gameObject) { return; }
-
-        if (other.gameObject.name == this.gameObject.name) { return; }
-
-        foreach (string name in IgnoreObjects)
+        if (other.gameObject.name.Contains("Ball"))
         {
-            if (other.gameObject.name.Contains(name))
+            if (Key != null)
             {
-                return;
+                Key.SetActive(true);
             }
-        }
-
-        if (Key != null)
-        {
-            Key.SetActive(true);
+            else
+            {
+                Debug.Log("No key");
+            }
         }
     }
 }
