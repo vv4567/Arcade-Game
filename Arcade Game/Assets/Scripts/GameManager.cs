@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Game Settings")]
     public double gameTime = 0;
     private double deltaTime = 0;
-    private int lastTimeUpdate = -1;
+    private static int lastTimeUpdate = -1;
     private double pauseTime = 0;
     private double pauseTimeStart = -1;
 
@@ -19,12 +20,20 @@ public class GameManager : MonoBehaviour
     public GameObject playerFirstPerson;
 
     [Header("UI")]
-    public Text timerText;
-    public Text gameOverText;
+    public TextMeshPro timerText;
+    public TextMeshPro gameOverText;
 
     public static bool GameStart { get; set; }
     public static bool GamePause { get; set; }
     public static bool GameEnd { get; set; }
+
+    public static int TimeLeft
+    {
+        get
+        {
+            return (lastTimeUpdate > 0 ? lastTimeUpdate : 0);
+        }
+    }
 
     [Header("Game Events")]
     public UnityEvent OnGameStart;
@@ -53,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public string SecondToTimeText(double timeInSeconds)
+    public static string SecondToTimeText(double timeInSeconds)
     {
         string stringBuilder = "";
         int h = 0, m = 0, s = 0;
