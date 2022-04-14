@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3954758304918410176}
   - component: {fileID: 7552915498658519180}
+  - component: {fileID: 2638512724834748858}
+  - component: {fileID: 7891649859016792669}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,13 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 10
+  FirstPersonMode: 0
+  playerOVR: {fileID: 0}
+  playerFirstPerson: {fileID: 0}
   timerText: {fileID: 0}
   gameOverText: {fileID: 0}
-  player: {fileID: 0}
-  playerFirstPerson: {fileID: 0}
-  GameStart: 0
-  GamePause: 0
-  GameEnd: 0
   OnGameStart:
     m_PersistentCalls:
       m_Calls: []
@@ -61,3 +61,126 @@ MonoBehaviour:
   OnGameEnd:
     m_PersistentCalls:
       m_Calls: []
+  OnTimeOut:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!82 &2638512724834748858
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085117241100613010}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7891649859016792669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085117241100613010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0722fca65bda6e4db1a7b653272065d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogs:
+  - {fileID: 8300000, guid: ac6bcc8ab261362459f160158c0fc887, type: 3}
+  - {fileID: 8300000, guid: 5198389d1a4e7304d8bf2fc0a03b60e9, type: 3}
+  - {fileID: 8300000, guid: 88a71127c17a5764cbcbb06ca5e8520d, type: 3}
+  - {fileID: 8300000, guid: a7ec3576a026e144aa6577c88ed5c25a, type: 3}
+  - {fileID: 8300000, guid: 93d7b975fe900b34fa1b985330aed9c8, type: 3}
+  - {fileID: 8300000, guid: 2cc54df121dba8d48af787cbe9927f49, type: 3}
+  - {fileID: 8300000, guid: 2ba89c77a48c71e4590e405c0f137ba1, type: 3}
+  - {fileID: 8300000, guid: 078795cd380422041b5c5e29614a0473, type: 3}
+  - {fileID: 8300000, guid: ed8a47f8ee911bd47a85af2d6fd9966b, type: 3}
+  - {fileID: 8300000, guid: f49af05925bb8c54c965b49f1dd4bca1, type: 3}
+  - {fileID: 8300000, guid: 6d1416debfbd0f64d87113b742ffcc8f, type: 3}

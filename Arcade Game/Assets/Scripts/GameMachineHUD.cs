@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameMachineHUD : MonoBehaviour
 {
     //public int timer;
-    public Text Timer;
-    public Text Score;
+    public TextMeshPro Timer;
+    public TextMeshPro Score;
 
     public GameMachine gameMachine;
 
