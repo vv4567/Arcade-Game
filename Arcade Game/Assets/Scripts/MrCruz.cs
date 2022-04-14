@@ -6,36 +6,61 @@ public enum DialogTypes { Intro, Intro_TooLong, Tutorial, Tutorial_Interrupted, 
 
 public class MrCruz : MonoBehaviour
 {
-    protected AudioSource audioSource;
+    protected static AudioSource audioSource;
 
     public AudioClip[] Dialogs;
 
-    private DialogTypes currentDialog;
+    public static AudioClip[] StaticDialogs;
+
+    private static DialogTypes currentDialog;
 
     private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
         currentDialog = DialogTypes.MAX_DIALOG_TYPE;
+
+        if (Dialogs != null && Dialogs.Length > 0)
+        {
+            StaticDialogs = new AudioClip[Dialogs.Length];
+
+            for(int i = 0; i < Dialogs.Length; ++i)
+            {
+                StaticDialogs[i] = Dialogs[i];
+            }
+        }
     }
 
     private void Start()
     {
-        StartCoroutine(IntroCo());
+        PlayVoiceOver(DialogTypes.Intro, 3);
+        currentDialog = DialogTypes.Intro;
+
+        StartCoroutine(IntroTooLongCo());
     }
 
-    public void StopDialogs()
+    IEnumerator IntroTooLongCo()
     {
-        StopAllCoroutines();
+        yield return new WaitForSeconds(22);
 
-        if (audioSource != null && audioSource.isPlaying)
+        if (currentDialog == DialogTypes.Intro)
         {
-            audioSource.Stop();
+            PlayVoiceOver(DialogTypes.Intro_TooLong, 0);
         }
     }
 
-    public void UpdateDialog()
+
+    public void StopDialogs()
     {
-        if (audioSource == null) { Debug.LogWarning(this.name + " cannot find AudioSource.");  return; }
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+            StopAllCoroutines();
+        }
+    }
+
+    public static void UpdateDialog()
+    {
+        if (audioSource == null) { Debug.LogWarning("Game Manager cannot find AudioSource.");  return; }
 
         switch (currentDialog)
         {
@@ -43,44 +68,64 @@ public class MrCruz : MonoBehaviour
             case DialogTypes.Intro:
                 if (audioSource.isPlaying)
                 {
-                    audioSource.Stop();
                     PlayVoiceOver(DialogTypes.Tutorial_Interrupted);
                 }
-
-                StopCoroutine(IntroCo());
+                currentDialog = DialogTypes.Intro_TooLong;
                 break;
 
             case DialogTypes.Intro_TooLong:
+                PlayVoiceOver(DialogTypes.Tutorial);
+                currentDialog = DialogTypes.Tutorial;
                 break;
 
             case DialogTypes.Tutorial:
+                if (audioSource.isPlaying)
+                {
+                    PlayVoiceOver(DialogTypes.Tutorial_Interrupted);
+                }
+                else
+                {
+                    PlayVoiceOver(DialogTypes.Tutorial_Completed);
+                }
+                currentDialog = DialogTypes.Tutorial_Completed;
+                break;
+
+            case DialogTypes.Tutorial_Completed:
+                PlayVoiceOver(DialogTypes.MainQuest);
+                currentDialog = DialogTypes.MainQuest;
                 break;
         }
 
 
     }
 
-    IEnumerator IntroCo()
+    public static void PlayVoiceOver(DialogTypes dialogType, float delay = 0)
     {
-        yield return new WaitForSeconds(3);
+        if (audioSource == null || StaticDialogs == null || StaticDialogs.Length < (int)DialogTypes.MAX_DIALOG_TYPE) { return; }
 
-        PlayVoiceOver(DialogTypes.Intro);
-        currentDialog = DialogTypes.Intro;
-
-        yield return new WaitForSeconds(22);
-        PlayVoiceOver(DialogTypes.Intro_TooLong);
-        currentDialog = DialogTypes.Intro_TooLong;
+        if (StaticDialogs[(int)dialogType] != null)
+        {
+            audioSource.clip = StaticDialogs[(int)dialogType];
+            audioSource.PlayDelayed(delay);
+        }
     }
 
- 
-
-    public void PlayVoiceOver(DialogTypes dialogType)
+    private void Update()
     {
-        if (audioSource == null || Dialogs == null || Dialogs.Length < (int)DialogTypes.MAX_DIALOG_TYPE) { return; }
-
-        if (Dialogs[(int)dialogType] != null)
+        if (GameManager.TimeLeft <= 1 && currentDialog == DialogTypes.OneMinWarning)
         {
-            audioSource.PlayOneShot(Dialogs[(int)dialogType]);
+            PlayVoiceOver(DialogTypes.BadEnding);
+            currentDialog = DialogTypes.BadEnding;
+        }
+        else if (GameManager.TimeLeft <= 60 && currentDialog == DialogTypes.FiveMinWarning)
+        {
+            PlayVoiceOver(DialogTypes.OneMinWarning);
+            currentDialog = DialogTypes.OneMinWarning;
+        }
+        else if (GameManager.TimeLeft <= 300 && currentDialog == DialogTypes.MainQuest)
+        {
+            PlayVoiceOver(DialogTypes.FiveMinWarning);
+            currentDialog = DialogTypes.FiveMinWarning;
         }
     }
 }

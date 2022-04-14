@@ -14,6 +14,7 @@ public class Bottle : MonoBehaviour
             if (Key != null)
             {
                 Key.SetActive(true);
+                MrCruz.UpdateDialog();
             }
             else
             {

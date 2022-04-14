@@ -75,6 +75,9 @@ public class RotateDoorController : MonoBehaviour
                 if (locked)
                 {
                     locked = false;
+
+                    MrCruz.UpdateDialog();
+
                     OnUnlocked.Invoke();
                     return;
                 }
