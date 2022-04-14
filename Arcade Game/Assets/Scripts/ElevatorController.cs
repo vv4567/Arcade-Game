@@ -58,7 +58,10 @@ public class ElevatorController : MonoBehaviour
     {
         if (DoOnce && done) { return; }
 
-        MrCruz.UpdateDialog();
+        if (MrCruz.currentDialog == DialogTypes.Intro)
+        {
+            MrCruz.UpdateDialog();
+        }
 
         if (_audioSource != null)
         {
@@ -144,8 +147,12 @@ public class ElevatorController : MonoBehaviour
                     if (player != null)
                     {
                         player.transform.SetParent(null);
-                        MrCruz.UpdateDialog();
                     }
+                }
+
+                if (MrCruz.currentDialog == DialogTypes.Intro_TooLong)
+                {
+                    MrCruz.UpdateDialog();
                 }
             }
 

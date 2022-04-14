@@ -12,7 +12,7 @@ public class MrCruz : MonoBehaviour
 
     public static AudioClip[] StaticDialogs;
 
-    private static DialogTypes currentDialog;
+    public static DialogTypes currentDialog;
 
     private void OnEnable()
     {
@@ -45,6 +45,7 @@ public class MrCruz : MonoBehaviour
         if (currentDialog == DialogTypes.Intro)
         {
             PlayVoiceOver(DialogTypes.Intro_TooLong, 0);
+            currentDialog = DialogTypes.Intro_TooLong;
         }
     }
 
