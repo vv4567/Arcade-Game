@@ -811,6 +811,7 @@ Transform:
   - {fileID: 2161443596746016499}
   - {fileID: 2342855629596268506}
   - {fileID: 1491236029750566328}
+  - {fileID: 9000105578096928113}
   m_Father: {fileID: 2244667228637505076}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7916,6 +7917,51 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.001, y: 0.21, z: 0.68}
   m_Center: {x: 0, y: 0.22823054, z: 1.7323097}
+--- !u!1 &8564487448624085338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9000105578096928113}
+  - component: {fileID: 275534256461048742}
+  m_Layer: 0
+  m_Name: Skeeballhole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9000105578096928113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564487448624085338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.498, y: 0.094, z: -1.305}
+  m_LocalScale: {x: 0.03433652, y: 1, z: 0.79687}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973106129114132165}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &275534256461048742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564487448624085338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8575044260461121397
 GameObject:
   m_ObjectHideFlags: 0
