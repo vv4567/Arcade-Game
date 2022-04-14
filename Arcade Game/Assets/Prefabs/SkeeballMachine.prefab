@@ -8796,6 +8796,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2244667228637505076}
     m_Modifications:
+    - target: {fileID: 800512166973655677, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
+      propertyPath: m_margin.x
+      value: 34.975082
+      objectReference: {fileID: 0}
+    - target: {fileID: 800512166973655677, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
+      propertyPath: m_margin.z
+      value: 27.962982
+      objectReference: {fileID: 0}
     - target: {fileID: 3192369370554198114, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
       propertyPath: m_Name
       value: ScoreBoardV2
@@ -8867,6 +8875,14 @@ PrefabInstance:
     - target: {fileID: 5063584524079938480, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002408807280413319, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
+      propertyPath: m_margin.x
+      value: 27.058044
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002408807280413319, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
+      propertyPath: m_margin.z
+      value: 36.753983
       objectReference: {fileID: 0}
     - target: {fileID: 8103028762693794155, guid: 4a82bae6e702c354ca691399f087efa3, type: 3}
       propertyPath: m_AnchoredPosition.x

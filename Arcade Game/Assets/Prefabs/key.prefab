@@ -577,7 +577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1673431504928650291
 Transform:
   m_ObjectHideFlags: 0
@@ -1113,7 +1113,7 @@ GameObject:
   - component: {fileID: 5207576225539626293}
   - component: {fileID: 2034222047683381488}
   m_Layer: 10
-  m_Name: keyblade
+  m_Name: key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

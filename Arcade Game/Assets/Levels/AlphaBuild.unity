@@ -25374,6 +25374,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &446598657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2415141812737688678, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+  m_PrefabInstance: {fileID: 1954337886}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &447312702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84820,7 +84831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1423128882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115482,6 +115493,10 @@ PrefabInstance:
       propertyPath: NumberOfTickets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3675126495428568774, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: ticketCountText
+      value: 
+      objectReference: {fileID: 446598657}
     - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: Player
       value: 
@@ -124589,6 +124604,10 @@ PrefabInstance:
       value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
+      propertyPath: playerOVR
+      value: 
+      objectReference: {fileID: 964849192}
+    - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 0}
@@ -124596,6 +124615,10 @@ PrefabInstance:
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 1585774471}
+    - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
+      propertyPath: playerFirstPerson
+      value: 
+      objectReference: {fileID: 1567831749}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: OnGameEnd.m_PersistentCalls.m_Calls.Array.size
       value: 1

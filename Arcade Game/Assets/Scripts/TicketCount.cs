@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TicketCount : MonoBehaviour
 {
     public int NumberOfTickets = 0;
-    public Text ticketCountText;
+    public TextMeshPro ticketCountText;
 
     // Start is called before the first frame update
     void Start()
