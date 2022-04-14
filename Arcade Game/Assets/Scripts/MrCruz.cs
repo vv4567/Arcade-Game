@@ -14,6 +14,7 @@ public class MrCruz : MonoBehaviour
 
     private void OnEnable()
     {
+        audioSource = GetComponent<AudioSource>();
         currentDialog = DialogTypes.MAX_DIALOG_TYPE;
     }
 
@@ -46,7 +47,7 @@ public class MrCruz : MonoBehaviour
                     PlayVoiceOver(DialogTypes.Tutorial_Interrupted);
                 }
 
-                StopCoroutine(IntroTooLongCo());
+                StopCoroutine(IntroCo());
                 break;
 
             case DialogTypes.Intro_TooLong:
@@ -66,15 +67,12 @@ public class MrCruz : MonoBehaviour
         PlayVoiceOver(DialogTypes.Intro);
         currentDialog = DialogTypes.Intro;
 
-        StartCoroutine(IntroTooLongCo());
-    }
-
-    IEnumerator IntroTooLongCo()
-    {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(22);
         PlayVoiceOver(DialogTypes.Intro_TooLong);
         currentDialog = DialogTypes.Intro_TooLong;
     }
+
+ 
 
     public void PlayVoiceOver(DialogTypes dialogType)
     {
