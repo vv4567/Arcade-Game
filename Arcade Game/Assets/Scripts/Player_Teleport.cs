@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player_Teleport : MonoBehaviour
@@ -50,7 +51,7 @@ public class Player_Teleport : MonoBehaviour
         yield return new WaitForSeconds(TeleportDelay);
         Player.transform.position = PositionToTeleport;
         Player.transform.rotation = Quaternion.identity;
-
+        SceneManager.LoadScene("Vinson_Menu");
         //TransitionScreen.Fade(FadeScreen.FadeType.FadeOut);
     }
 }
