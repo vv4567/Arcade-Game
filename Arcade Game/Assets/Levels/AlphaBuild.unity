@@ -16856,7 +16856,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2896684565185448580, guid: 3fcf8eddeaf788240bcc438500d0b33c, type: 3}
 --- !u!1001 &289500303
@@ -21485,7 +21485,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2896684565185448580, guid: 3fcf8eddeaf788240bcc438500d0b33c, type: 3}
 --- !u!1 &374328588
@@ -28233,7 +28233,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2896684565185448580, guid: 3fcf8eddeaf788240bcc438500d0b33c, type: 3}
 --- !u!1 &494634350
@@ -107525,7 +107525,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2896684565185448580, guid: 3fcf8eddeaf788240bcc438500d0b33c, type: 3}
 --- !u!1 &1814764516
@@ -124615,6 +124615,10 @@ PrefabInstance:
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 1585774471}
+    - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
+      propertyPath: FirstPersonMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: playerFirstPerson
       value: 
