@@ -9,7 +9,7 @@ public class Bottle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("Ball"))
+        if (other.gameObject.GetComponent<XRGrabInteractable>())
         {
             if (Key != null)
             {
