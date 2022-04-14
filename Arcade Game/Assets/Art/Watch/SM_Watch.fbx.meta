@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 5d9e53fb09a68cf4787cf0e3018b4a6f
+guid: 659b5d4a03a96b34aa885bf19d4b0d3a
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Watch_Mat
+    second: {fileID: 2100000, guid: 68fd3a5d44ad7254e815b435e70f4844, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
