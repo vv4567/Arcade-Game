@@ -14,7 +14,11 @@ public class Bottle : MonoBehaviour
             if (Key != null)
             {
                 Key.SetActive(true);
-                MrCruz.UpdateDialog();
+
+                if (MrCruz.currentDialog == DialogTypes.Tutorial)
+                {
+                    MrCruz.UpdateDialog();
+                }
             }
             else
             {

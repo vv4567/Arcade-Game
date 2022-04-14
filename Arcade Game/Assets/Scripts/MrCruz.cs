@@ -113,6 +113,7 @@ public class MrCruz : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (GameManager.TimeLeft <= 1 && currentDialog == DialogTypes.OneMinWarning)
         {
             PlayVoiceOver(DialogTypes.BadEnding);
@@ -128,5 +129,6 @@ public class MrCruz : MonoBehaviour
             PlayVoiceOver(DialogTypes.FiveMinWarning);
             currentDialog = DialogTypes.FiveMinWarning;
         }
+        */
     }
 }
