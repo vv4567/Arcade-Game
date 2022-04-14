@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnGameEnd;
     public UnityEvent OnTimeOut;
 
-
     private void OnEnable()
     {
         if (gameOverText != null)
@@ -149,10 +148,23 @@ public class GameManager : MonoBehaviour
 
             }
             else { Debug.Log("Timer: " + " " + SecondToTimeText(lastTimeUpdate)); }
+
+            if (lastTimeUpdate <= 300 && MrCruz.WarningCount == 0)
+            {
+                MrCruz.PlayVoiceOver(DialogTypes.FiveMinWarning);
+                MrCruz.WarningCount++;
+            }
+            else if (lastTimeUpdate <= 60 && MrCruz.WarningCount == 1)
+            {
+                MrCruz.PlayVoiceOver(DialogTypes.OneMinWarning);
+                MrCruz.WarningCount++;
+            }
         }
 
         if (deltaTime <= 0 && !GameEnd)
         {
+            MrCruz.PlayVoiceOver(DialogTypes.BadEnding);
+            
             GameEnd = true;
 
             deltaTime = -1;

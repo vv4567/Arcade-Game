@@ -42,14 +42,21 @@ public class ShopkeepTriggerBox : MonoBehaviour
                     if (RewardList[i].GetComponent<XRGrabInteractable>() != null)
                     {
                         RewardList[i].GetComponent<XRGrabInteractable>().enabled = true;
-                        MrCruz.PlayVoiceOver(DialogTypes.EnoughTicket);
+
+                        if (!MrCruz.IsTalking)
+                        {
+                            MrCruz.PlayVoiceOver(DialogTypes.EnoughTicket);
+                        }
                     }
 
                     return;
                 }
             }
 
-            MrCruz.PlayVoiceOver(DialogTypes.NotEnoughTicket);
+            if (!MrCruz.IsTalking)
+            {
+                MrCruz.PlayVoiceOver(DialogTypes.NotEnoughTicket);
+            }
         }
     }
 }

@@ -14,6 +14,16 @@ public class MrCruz : MonoBehaviour
 
     public static DialogTypes currentDialog;
 
+    public static int WarningCount = 0;
+
+    public static bool IsTalking
+    {
+        get
+        {
+            return audioSource.isPlaying;
+        }
+    }
+
     private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
@@ -67,7 +77,7 @@ public class MrCruz : MonoBehaviour
         {
 
             case DialogTypes.Intro:
-                if (audioSource.isPlaying)
+                if (IsTalking)
                 {
                     PlayVoiceOver(DialogTypes.Tutorial_Interrupted);
                 }
@@ -80,7 +90,7 @@ public class MrCruz : MonoBehaviour
                 break;
 
             case DialogTypes.Tutorial:
-                if (audioSource.isPlaying)
+                if (IsTalking)
                 {
                     PlayVoiceOver(DialogTypes.Tutorial_Interrupted);
                 }
