@@ -19,10 +19,7 @@ public class MrCruz : MonoBehaviour
 
     private void Start()
     {
-        PlayVoiceOver(DialogTypes.Intro);
-        currentDialog = DialogTypes.Intro;
-
-        StartCoroutine(IntroTooLongCo());
+        StartCoroutine(IntroCo());
     }
 
     public void StopDialogs()
@@ -60,6 +57,16 @@ public class MrCruz : MonoBehaviour
         }
 
 
+    }
+
+    IEnumerator IntroCo()
+    {
+        yield return new WaitForSeconds(3);
+
+        PlayVoiceOver(DialogTypes.Intro);
+        currentDialog = DialogTypes.Intro;
+
+        StartCoroutine(IntroTooLongCo());
     }
 
     IEnumerator IntroTooLongCo()
