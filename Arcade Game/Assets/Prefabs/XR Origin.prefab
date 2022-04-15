@@ -168,7 +168,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3363050526302804793}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -58.7}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
   m_LocalScale: {x: 2.1667, y: 2.1667, z: 2.1667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -259,8 +259,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281315396
-  m_fontColor: {r: 0.2649285, g: 0.6886792, b: 0.18516374, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -394,7 +394,7 @@ Transform:
   m_GameObject: {fileID: 4088704248398686531}
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: -0.5}
   m_LocalPosition: {x: -250, y: 191.9, z: -212}
-  m_LocalScale: {x: 8000, y: 15528.8, z: 8000}
+  m_LocalScale: {x: 9999, y: 9999, z: 9996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3675126495428568775}
@@ -572,7 +572,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7260689710744647007}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -59}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
   m_LocalScale: {x: 3.2717555, y: 3.2717555, z: 3.2717555}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -581,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -241, y: 85}
+  m_AnchoredPosition: {x: -253, y: 85}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1585069994420338030
@@ -663,8 +663,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281315396
-  m_fontColor: {r: 0.26666668, g: 0.6901961, b: 0.18431373, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2619,6 +2619,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3741566647815324216, guid: 636119fda5ab6f54d9157cffd293ff31, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b81fd7e5a10d9464681e83b99e5e8eb9, type: 2}
     - target: {fileID: 3999757584036056561, guid: 636119fda5ab6f54d9157cffd293ff31, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3136,7 +3140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9079911904131206284, guid: 375582d192631264eb8552a43d12d50c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -59
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 9079911904131206284, guid: 375582d192631264eb8552a43d12d50c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3261,8 +3265,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281315396
-  m_fontColor: {r: 0.26666668, g: 0.6901961, b: 0.18431373, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
