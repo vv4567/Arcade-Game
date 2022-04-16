@@ -16,7 +16,7 @@ public class Reward : MonoBehaviour
     {
         if (TicketCostText != null)
         {
-            TicketCostText.text = TicketCost.ToString() + "\nTickets";
+            TicketCostText.text = TicketCost.ToString() + " Tickets";
         }
 
         _collider = GetComponent<Collider>();

@@ -110,8 +110,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965009526743066414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0966, y: 1.0966, z: 1.0966}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.71859103, y: 0.71859103, z: 0.71859103}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3965009527861450568}
@@ -119,7 +119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12, y: -30.2}
+  m_AnchoredPosition: {x: -12, y: 35.2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3965009526743066401
@@ -151,19 +151,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0cfab1186c614344b98c30de86793ded, type: 3}
+    m_Font: {fileID: 12800000, guid: baaf932dc694ab440bf22c58030c2d64, type: 3}
     m_FontSize: 71
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 200
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100 Tickets
+  m_Text: "50 \nTickets"
 --- !u!1 &3965009527861450583
 GameObject:
   m_ObjectHideFlags: 0

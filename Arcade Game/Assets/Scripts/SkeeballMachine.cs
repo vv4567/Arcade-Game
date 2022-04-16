@@ -24,7 +24,7 @@ public class SkeeballMachine : GameMachine
         if (_isRunning) { return; }
 
         base.StartMachine();
-
+        numberOfBallUsed = 0;
         //spawn balls
         SpawnBalls(NumberOfBalls);
     }

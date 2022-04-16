@@ -124954,6 +124954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5085117241100613010, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: player
       value: 
@@ -124976,7 +124980,7 @@ PrefabInstance:
       objectReference: {fileID: 1585774471}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: FirstPersonMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: playerFirstPerson
