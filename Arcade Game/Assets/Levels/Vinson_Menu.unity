@@ -1199,6 +1199,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
+      propertyPath: gameTime
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: playerOVR
       value: 
       objectReference: {fileID: 1353543432}

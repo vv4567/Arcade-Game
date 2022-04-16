@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
+        
         if (gameOverText != null)
         {
             gameOverText.text = "";
@@ -58,8 +59,15 @@ public class GameManager : MonoBehaviour
         {
             playerOVR.SetActive(!FirstPersonMode);
         }
-
-    }
+        GameEnd = false;
+        GameStart = false;
+        GamePause = false;
+        //gameTime = 0;
+        deltaTime = 0;
+        lastTimeUpdate = -1;
+        pauseTime = 0;
+        pauseTimeStart = -1;
+}
 
     public static string SecondToTimeText(double timeInSeconds)
     {
