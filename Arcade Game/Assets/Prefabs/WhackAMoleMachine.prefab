@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameTimeInSeconds: 30
   ticketSpawner: {fileID: 932974780001463405}
-  NumberOfTicketsPerScore: 0.1
+  NumberOfTicketsPerScore: 0.05
   OnMachineStart:
     m_PersistentCalls:
       m_Calls:
