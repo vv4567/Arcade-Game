@@ -75,6 +75,7 @@ public class GameMachine : MonoBehaviour
 
     public virtual void StopMachine()
     {
+        if(_isRunning == false) { return; }
         _isRunning = false;
         //turn off light and other effect to let player know the machine is turned off
 
