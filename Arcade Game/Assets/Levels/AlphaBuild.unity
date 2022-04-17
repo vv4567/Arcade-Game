@@ -112787,7 +112787,6 @@ GameObject:
   - component: {fileID: 1898161756}
   - component: {fileID: 1898161755}
   - component: {fileID: 1898161757}
-  - component: {fileID: 1898161761}
   - component: {fileID: 1898161760}
   - component: {fileID: 1898161759}
   - component: {fileID: 1898161758}
@@ -112874,8 +112873,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01566706, y: 0.011100508, z: 0.01829174}
-  m_Center: {x: 0.00007096354, y: 0.00044124937, z: 0.00000023841997}
+  m_Size: {x: 0.01566706, y: 0.0037340925, z: 0.01829174}
+  m_Center: {x: 0.00007096355, y: 0.011614799, z: 0.0000002384193}
 --- !u!114 &1898161758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113023,20 +113022,6 @@ MonoBehaviour:
   m_TintOnHover: 1
   m_TintOnSelection: 1
   m_TintRenderers: []
---- !u!64 &1898161761
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898161753}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4068373912626513877, guid: 302612880874bb24db1b6b9ccc7d10e5, type: 3}
 --- !u!4 &1899754235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 641681770445267505, guid: 52aa884898176784386def599a9ccab8, type: 3}
