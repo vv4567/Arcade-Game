@@ -21,10 +21,12 @@ public class FadeScreen : MonoBehaviour
     public bool fade = false;
 
     protected Image image;
+    protected SpriteRenderer spriteRenderer;
 
     private void OnEnable()
     {
         image = GetComponentInChildren<Image>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Start()
@@ -87,11 +89,16 @@ public class FadeScreen : MonoBehaviour
         {
             image.color = new Color(FadeToColor.r, FadeToColor.g, FadeToColor.b, _currentAlpha);
         }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(FadeToColor.r, FadeToColor.g, FadeToColor.b, _currentAlpha);
+        }
     }
 
     private void Update()
     {
-        if (!fade || image == null) { return; }
+        if (!fade) { return; }
 
         if (_currentAlpha != _targetAlpha && Mathf.Abs(_currentAlpha - _targetAlpha) > _aDelta)
         {
@@ -103,6 +110,14 @@ public class FadeScreen : MonoBehaviour
             fade = false;
         }
 
-        image.color = new Color(FadeToColor.r, FadeToColor.g, FadeToColor.b, _currentAlpha);
+        if (image != null)
+        { 
+            image.color = new Color(FadeToColor.r, FadeToColor.g, FadeToColor.b, _currentAlpha);
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(FadeToColor.r, FadeToColor.g, FadeToColor.b, _currentAlpha);
+        }
     }
 }
