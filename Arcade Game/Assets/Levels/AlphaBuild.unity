@@ -1026,6 +1026,10 @@ PrefabInstance:
       value: Mallet (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
+      propertyPath: UseLocalPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
       propertyPath: InitialPosition.x
       value: 112.31698
       objectReference: {fileID: 0}
@@ -57914,6 +57918,10 @@ PrefabInstance:
       value: Mallet
       objectReference: {fileID: 0}
     - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
+      propertyPath: UseLocalPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
       propertyPath: InitialPosition.x
       value: 102.27356
       objectReference: {fileID: 0}
@@ -77162,6 +77170,10 @@ PrefabInstance:
     - target: {fileID: 3478090943937176276, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
       propertyPath: m_Name
       value: Mallet (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
+      propertyPath: UseLocalPosition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7953512977809022667, guid: 1b4fb7799fad5eb4a9dbbbc113a6d0b4, type: 3}
       propertyPath: InitialPosition.x
@@ -116040,6 +116052,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058047465958701180, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0457
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058047465958701180, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 3290606692651057661, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_RenderMode
       value: 2
@@ -116194,7 +116214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113916839196791734, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.023
+      value: 2.0138
       objectReference: {fileID: 0}
     - target: {fileID: 8113916839196791734, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -125292,7 +125312,7 @@ PrefabInstance:
       objectReference: {fileID: 1585774471}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: FirstPersonMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7552915498658519180, guid: 106051a727f169d4b939f7eaad579f33, type: 3}
       propertyPath: playerFirstPerson
