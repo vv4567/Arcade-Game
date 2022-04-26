@@ -56,7 +56,7 @@ MonoBehaviour:
   - {fileID: 4796346873795228507}
   - {fileID: 1585413468026589562}
   - {fileID: 2336952602260036041}
-  TicketValues: 1400000028000000
+  TicketValues: 0a00000014000000
   ticketValue: 1
   ticketCount: {fileID: 0}
 --- !u!65 &7331079846896872990

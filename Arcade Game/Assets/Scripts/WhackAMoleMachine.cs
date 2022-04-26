@@ -5,9 +5,15 @@ using UnityEngine;
 public class WhackAMoleMachine : GameMachine
 {
     public List<Mole> moleList;
+    public GameObject Malet;
 
     public override void StartMachine()
     {
+        if (Malet != null && Malet.GetComponent<ResetPosition>() != null)
+        {
+            Malet.GetComponent<ResetPosition>().ResetPos();
+        }
+
         if (_isRunning) { return; }
 
         base.StartMachine();

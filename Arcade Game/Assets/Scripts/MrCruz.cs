@@ -24,6 +24,11 @@ public class MrCruz : MonoBehaviour
         }
     }
 
+    public static bool EnoughTicket
+    {
+        get; set;
+    }
+
     private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
@@ -42,6 +47,7 @@ public class MrCruz : MonoBehaviour
 
     private void Start()
     {
+        EnoughTicket = false;
         PlayVoiceOver(DialogTypes.Intro, 3);
         currentDialog = DialogTypes.Intro;
 

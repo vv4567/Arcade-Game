@@ -79,6 +79,12 @@ public class RotateDoorController : MonoBehaviour
                     MrCruz.UpdateDialog();
 
                     OnUnlocked.Invoke();
+
+                    if (other.tag != "Player")
+                    {
+                        Destroy(other.gameObject);
+                    }
+
                     return;
                 }
             }

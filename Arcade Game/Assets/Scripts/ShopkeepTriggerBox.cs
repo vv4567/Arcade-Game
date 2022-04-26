@@ -37,15 +37,16 @@ public class ShopkeepTriggerBox : MonoBehaviour
             {
                 if (RewardList[i].TicketCost <= TicketCounter.NumberOfTickets)
                 {
-                    TicketCounter.NumberOfTickets -= RewardList[i].TicketCost;
+                    //TicketCounter.NumberOfTickets -= RewardList[i].TicketCost;
 
                     if (RewardList[i].GetComponent<XRGrabInteractable>() != null)
                     {
                         RewardList[i].GetComponent<XRGrabInteractable>().enabled = true;
 
-                        if (!MrCruz.IsTalking)
+                        if (!MrCruz.IsTalking && !MrCruz.EnoughTicket)
                         {
                             MrCruz.PlayVoiceOver(DialogTypes.EnoughTicket);
+                            MrCruz.EnoughTicket = true;
                         }
                     }
 
