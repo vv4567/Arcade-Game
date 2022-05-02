@@ -116066,6 +116066,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 964849192}
     - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
+      propertyPath: NextSceneName
+      value: Credit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697800895645606338, guid: 30d312dfbbbffa841ae9d1640ca3d8ed, type: 3}
       propertyPath: TeleportDelay
       value: 10
       objectReference: {fileID: 0}

@@ -12,10 +12,15 @@ public class Player_Teleport : MonoBehaviour
     public bool LockMovement = true;
     public ContinuousMoveProviderBase locomotionSystem;
 
+    public bool AutoTeleport = false;
+    public float AutoTeleportDelay = 0f;
+
     public float TeleportDelay = 0;
 
     public FadeScreen TransitionScreen;
     public Color TransitionColor;
+
+    public string NextSceneName;
 
     private void Start()
     {
@@ -23,6 +28,17 @@ public class Player_Teleport : MonoBehaviour
         {
             Player = gameObject;
         }
+
+        if (AutoTeleport && AutoTeleportDelay > 0)
+        {
+            StartCoroutine(AutoTeleportCo());
+        }
+    }
+
+    IEnumerator AutoTeleportCo()
+    {
+        yield return new WaitForSeconds(AutoTeleportDelay);
+        Teleport();
     }
 
     public void Teleport()
@@ -51,7 +67,7 @@ public class Player_Teleport : MonoBehaviour
         yield return new WaitForSeconds(TeleportDelay);
         Player.transform.position = PositionToTeleport;
         Player.transform.rotation = Quaternion.identity;
-        SceneManager.LoadScene("Vinson_Menu");
+        SceneManager.LoadScene(NextSceneName);
         //TransitionScreen.Fade(FadeScreen.FadeType.FadeOut);
     }
 }
