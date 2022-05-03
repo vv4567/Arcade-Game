@@ -130283,6 +130283,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6780774988268157468, guid: 872fb67d941906d49b29f52547ddc860, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9201847042414338831, guid: 872fb67d941906d49b29f52547ddc860, type: 3}
       propertyPath: m_Name
       value: key
